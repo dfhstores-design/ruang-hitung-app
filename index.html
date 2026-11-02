@@ -3258,6 +3258,7 @@
 
   const APP_NAME = 'Ruang Hitung';
   const APP_URL = 'https://script.google.com/macros/s/AKfycbw6FaGYiLy_kG8Q56EEHGwIEGufCOfrfArKPKtpSCxI5x4Qz-P5EJYGSvUw3QkSOp3J/exec';
+  const SHARE_URL = window.location.origin + window.location.pathname;
   const SESSION_KEY = 'ruang_hitung_token';
   const THEME_KEY = 'ruang_hitung_theme';
 
@@ -4338,7 +4339,7 @@
           '<section class="panel share-panel" style="grid-column:1/-1" aria-labelledby="share-title">' +
             '<div class="panel-head"><h2 id="share-title">Bagikan aplikasi</h2></div>' +
             '<p class="panel-note">Gunakan link ini untuk guru dan siswa. Link Google Sheets, laporan, atau folder Drive bukan link aplikasi.</p>' +
-            '<div class="share-link-row"><input class="input" id="app-share-url" type="text" readonly value="' + esc(APP_URL) + '"><div class="share-actions"><button type="button" class="btn btn-primary btn-small" data-action="copy-app-link">Salin link</button><button type="button" class="btn btn-secondary btn-small" data-action="share-app">Bagikan</button></div></div>' +
+            '<div class="share-link-row"><input class="input" id="app-share-url" type="text" readonly value="' + esc(SHARE_URL) + '"><div class="share-actions"><button type="button" class="btn btn-primary btn-small" data-action="copy-app-link">Salin link</button><button type="button" class="btn btn-secondary btn-small" data-action="share-app">Bagikan</button></div></div>' +
             '<p class="data-footnote">Tempel link ini di WhatsApp atau grup kelas. Jangan bagikan link Google Sheet dan tautan laporan kepada siswa.</p>' +
           '</section>' +
           '<section class="panel" aria-labelledby="code-title">' +
@@ -5217,8 +5218,8 @@
       'DTEND:' + localDate(end),
       'RRULE:FREQ=DAILY',
       'SUMMARY:Latihan Matematika - Ruang Hitung',
-      'DESCRIPTION:Waktunya latihan soal matematika. Buka ' + APP_URL,
-      'URL:' + APP_URL,
+      'DESCRIPTION:Waktunya latihan soal matematika. Buka ' + SHARE_URL,
+      'URL:' + SHARE_URL,
       'BEGIN:VALARM',
       'TRIGGER:-PT10M',
       'ACTION:DISPLAY',
@@ -5591,15 +5592,15 @@
     if (action === 'open-audit') { openAudit(); return; }
     if (action === 'install-help') { openInstallHelp(); return; }
     if (action === 'copy-app-link') {
-      copyText(APP_URL);
+      copyText(SHARE_URL);
       showToast('Link aplikasi disalin. Bagikan link ini, bukan link Google Drive.', 'success');
       return;
     }
     if (action === 'share-app') {
       if (navigator.share) {
-        navigator.share({ title: 'Ruang Hitung', text: 'Latihan soal matematika kelas 9', url: APP_URL }).catch(function () { copyText(APP_URL); showToast('Link aplikasi disalin.', 'success'); });
+        navigator.share({ title: 'Ruang Hitung', text: 'Latihan soal matematika kelas 9', url: SHARE_URL }).catch(function () { copyText(SHARE_URL); showToast('Link aplikasi disalin.', 'success'); });
       } else {
-        copyText(APP_URL);
+        copyText(SHARE_URL);
         showToast('Link aplikasi disalin.', 'success');
       }
       return;
