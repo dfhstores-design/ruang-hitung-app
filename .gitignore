@@ -1,0 +1,14 @@
+# Kredensial dan token lokal: JANGAN pernah commit file ini.
+.clasprc.json
+*.clasprc.json
+credentials.json
+token.json
+client_secret*.json
+*.env
+.env
+.env.*
+
+# Artefak sementara dan build
+*.tmpdir
+preview.html
+*.log

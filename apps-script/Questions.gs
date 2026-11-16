@@ -1,0 +1,5855 @@
+/* Bank soal Ruang Hitung v3. Sumber utama ada di questions-v3.json. */
+const QUESTION_BANK = {
+  "topics": [
+    {
+      "id": "bilangan",
+      "name": "Bilangan Berpangkat dan Bentuk Akar",
+      "short": "Bilangan"
+    },
+    {
+      "id": "aljabar",
+      "name": "Persamaan dan Fungsi Kuadrat",
+      "short": "Aljabar"
+    },
+    {
+      "id": "fungsi",
+      "name": "Fungsi Linear dan Relasi",
+      "short": "Fungsi"
+    },
+    {
+      "id": "geometri",
+      "name": "Geometri dan Pengukuran",
+      "short": "Geometri"
+    },
+    {
+      "id": "statistika",
+      "name": "Statistika dan Peluang",
+      "short": "Statistika"
+    },
+    {
+      "id": "perbandingan",
+      "name": "Perbandingan dan Aritmetika Sosial",
+      "short": "Perbandingan"
+    }
+  ],
+  "questions": [
+    {
+      "id": "B01",
+      "topicId": "bilangan",
+      "difficulty": "Mudah",
+      "question": "Hasil dari (2³ × 2⁴) ÷ 2⁵ adalah ...",
+      "options": [
+        "8",
+        "16",
+        "2",
+        "4"
+      ],
+      "answer": 3,
+      "solution": "Gunakan sifat perkalian pangkat: 2³ × 2⁴ = 2⁷.\nKemudian 2⁷ ÷ 2⁵ = 2² = 4.",
+      "familyId": "B01",
+      "variantId": 1,
+      "level": 1,
+      "skill": "bilangan",
+      "active": true
+    },
+    {
+      "id": "B02",
+      "topicId": "bilangan",
+      "difficulty": "Mudah",
+      "question": "Nilai dari (3²)³ × 3⁻⁴ adalah ...",
+      "options": [
+        "3",
+        "9",
+        "27",
+        "81"
+      ],
+      "answer": 1,
+      "solution": "(3²)³ = 3⁶.\nMaka 3⁶ × 3⁻⁴ = 3² = 9.",
+      "familyId": "B02",
+      "variantId": 1,
+      "level": 1,
+      "skill": "bilangan",
+      "active": true
+    },
+    {
+      "id": "B03",
+      "topicId": "bilangan",
+      "difficulty": "Sedang",
+      "question": "Hasil dari √75 + √12 − √27 adalah ...",
+      "options": [
+        "2√3",
+        "3√3",
+        "4√3",
+        "5√3"
+      ],
+      "answer": 2,
+      "solution": "Sederhanakan setiap akar:\n√75 = 5√3, √12 = 2√3, dan √27 = 3√3.\nMaka (5 + 2 − 3)√3 = 4√3.",
+      "familyId": "B03",
+      "variantId": 1,
+      "level": 2,
+      "skill": "bilangan",
+      "active": true
+    },
+    {
+      "id": "B04",
+      "topicId": "bilangan",
+      "difficulty": "Sedang",
+      "question": "Bentuk sederhana dari 6/√3 adalah ...",
+      "options": [
+        "2√3",
+        "3√2",
+        "6√3",
+        "2√2"
+      ],
+      "answer": 0,
+      "solution": "Kalikan pembilang dan penyebut dengan √3:\n6/√3 × √3/√3 = 6√3/3 = 2√3.",
+      "familyId": "B04",
+      "variantId": 1,
+      "level": 2,
+      "skill": "bilangan",
+      "active": true
+    },
+    {
+      "id": "B05",
+      "topicId": "bilangan",
+      "difficulty": "Mudah",
+      "question": "Notasi ilmiah dari 0,00072 adalah ...",
+      "options": [
+        "7,2 × 10⁻⁴",
+        "7,2 × 10⁻⁵",
+        "7,2 × 10⁴",
+        "7,2 × 10⁻³"
+      ],
+      "answer": 0,
+      "solution": "Geser koma empat tempat ke kanan sehingga menjadi 7,2.\nKarena koma bergeser ke kanan, pangkatnya negatif: 7,2 × 10⁻⁴.",
+      "familyId": "B05",
+      "variantId": 1,
+      "level": 1,
+      "skill": "bilangan",
+      "active": true
+    },
+    {
+      "id": "B06",
+      "topicId": "bilangan",
+      "difficulty": "Mudah",
+      "question": "Hasil dari (2√5)² adalah ...",
+      "options": [
+        "100",
+        "10",
+        "20",
+        "40"
+      ],
+      "answer": 2,
+      "solution": "(2√5)² = 2² × (√5)² = 4 × 5 = 20.",
+      "familyId": "B06",
+      "variantId": 1,
+      "level": 1,
+      "skill": "bilangan",
+      "active": true
+    },
+    {
+      "id": "B07",
+      "topicId": "bilangan",
+      "difficulty": "Sedang",
+      "question": "Jika 5^(x + 1) = 125, nilai x adalah ...",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "answer": 1,
+      "solution": "125 = 5³, sehingga 5^(x + 1) = 5³.\nMaka x + 1 = 3 dan x = 2.",
+      "familyId": "B07",
+      "variantId": 1,
+      "level": 2,
+      "skill": "bilangan",
+      "active": true
+    },
+    {
+      "id": "B08",
+      "topicId": "bilangan",
+      "difficulty": "Mudah",
+      "question": "Nilai dari √0,49 adalah ...",
+      "options": [
+        "7",
+        "70",
+        "0,07",
+        "0,7"
+      ],
+      "answer": 3,
+      "solution": "0,7 × 0,7 = 0,49.\nJadi √0,49 = 0,7.",
+      "familyId": "B08",
+      "variantId": 1,
+      "level": 1,
+      "skill": "bilangan",
+      "active": true
+    },
+    {
+      "id": "B09",
+      "topicId": "bilangan",
+      "difficulty": "Sedang",
+      "question": "Bentuk sederhana dari (a³b²)² ÷ (a²b) adalah ...",
+      "options": [
+        "a⁴b²",
+        "a⁴b³",
+        "a⁵b³",
+        "a⁶b⁴"
+      ],
+      "answer": 1,
+      "solution": "(a³b²)² = a⁶b⁴.\nBagi dengan a²b: a⁶⁻² b⁴⁻¹ = a⁴b³.",
+      "familyId": "B09",
+      "variantId": 1,
+      "level": 2,
+      "skill": "bilangan",
+      "active": true
+    },
+    {
+      "id": "B10",
+      "topicId": "bilangan",
+      "difficulty": "Sedang",
+      "question": "Hasil dari 2√3 × 3√2 adalah ...",
+      "options": [
+        "6√6",
+        "12√6",
+        "5√6",
+        "6√5"
+      ],
+      "answer": 0,
+      "solution": "Kalikan angka di luar akar dan angka di dalam akar secara terpisah:\n2 × 3 = 6 dan √3 × √2 = √6.\nHasilnya 6√6.",
+      "familyId": "B10",
+      "variantId": 1,
+      "level": 2,
+      "skill": "bilangan",
+      "active": true
+    },
+    {
+      "id": "A01",
+      "topicId": "aljabar",
+      "difficulty": "Mudah",
+      "question": "Akar-akar persamaan x² − 5x + 6 = 0 adalah ...",
+      "options": [
+        "−2 dan −3",
+        "−1 dan 6",
+        "1 dan 6",
+        "2 dan 3"
+      ],
+      "answer": 3,
+      "solution": "Faktorkan: x² − 5x + 6 = (x − 2)(x − 3).\nAkar-akarnya adalah x = 2 dan x = 3.",
+      "familyId": "A01",
+      "variantId": 1,
+      "level": 1,
+      "skill": "aljabar",
+      "active": true
+    },
+    {
+      "id": "A02",
+      "topicId": "aljabar",
+      "difficulty": "Mudah",
+      "question": "Pemfaktoran dari x² − 9 adalah ...",
+      "options": [
+        "(x − 9)(x + 1)",
+        "(x − 3)(x − 3)",
+        "(x − 3)(x + 3)",
+        "(x + 3)(x + 3)"
+      ],
+      "answer": 2,
+      "solution": "Gunakan bentuk selisih kuadrat: a² − b² = (a − b)(a + b).\nx² − 9 = x² − 3² = (x − 3)(x + 3).",
+      "familyId": "A02",
+      "variantId": 1,
+      "level": 1,
+      "skill": "aljabar",
+      "active": true
+    },
+    {
+      "id": "A03",
+      "topicId": "aljabar",
+      "difficulty": "Mudah",
+      "question": "Akar-akar persamaan x² + 7x + 12 = 0 adalah ...",
+      "options": [
+        "−3 dan −4",
+        "2 dan 6",
+        "−2 dan −6",
+        "3 dan 4"
+      ],
+      "answer": 0,
+      "solution": "Faktorkan: x² + 7x + 12 = (x + 3)(x + 4).\nAkar-akarnya adalah x = −3 dan x = −4.",
+      "familyId": "A03",
+      "variantId": 1,
+      "level": 1,
+      "skill": "aljabar",
+      "active": true
+    },
+    {
+      "id": "A04",
+      "topicId": "aljabar",
+      "difficulty": "Sedang",
+      "question": "Diskriminan dari persamaan 2x² − 3x + 1 = 0 adalah ...",
+      "options": [
+        "−1",
+        "1",
+        "7",
+        "17"
+      ],
+      "answer": 1,
+      "solution": "D = b² − 4ac dengan a = 2, b = −3, dan c = 1.\nD = (−3)² − 4(2)(1) = 9 − 8 = 1.",
+      "familyId": "A04",
+      "variantId": 1,
+      "level": 2,
+      "skill": "aljabar",
+      "active": true
+    },
+    {
+      "id": "A05",
+      "topicId": "aljabar",
+      "difficulty": "Sedang",
+      "question": "Persamaan kuadrat yang akar-akarnya 2 dan −5 adalah ...",
+      "options": [
+        "x² + 7x − 10 = 0",
+        "x² − 7x + 10 = 0",
+        "x² + 3x − 10 = 0",
+        "x² − 3x − 10 = 0"
+      ],
+      "answer": 2,
+      "solution": "Jumlah akar = 2 + (−5) = −3.\nHasil kali akar = 2 × (−5) = −10.\nPersamaan: x² − (jumlah)x + hasil kali = 0, sehingga x² + 3x − 10 = 0.",
+      "familyId": "A05",
+      "variantId": 1,
+      "level": 2,
+      "skill": "aljabar",
+      "active": true
+    },
+    {
+      "id": "A06",
+      "topicId": "aljabar",
+      "difficulty": "Sedang",
+      "question": "Titik puncak grafik y = x² − 4x + 1 adalah ...",
+      "options": [
+        "(−2, −3)",
+        "(2, 3)",
+        "(4, 1)",
+        "(2, −3)"
+      ],
+      "answer": 3,
+      "solution": "Nilai x titik puncak: x = −b/(2a) = 4/2 = 2.\nSubstitusi x = 2: y = 2² − 4(2) + 1 = −3.\nTitik puncaknya (2, −3).",
+      "familyId": "A06",
+      "variantId": 1,
+      "level": 2,
+      "skill": "aljabar",
+      "active": true
+    },
+    {
+      "id": "A07",
+      "topicId": "aljabar",
+      "difficulty": "Sedang",
+      "question": "Nilai minimum fungsi y = x² + 6x + 5 adalah ...",
+      "options": [
+        "14",
+        "−4",
+        "−3",
+        "5"
+      ],
+      "answer": 1,
+      "solution": "x = −b/(2a) = −6/2 = −3.\nSubstitusi x = −3: y = 9 − 18 + 5 = −4.\nNilai minimumnya −4.",
+      "familyId": "A07",
+      "variantId": 1,
+      "level": 2,
+      "skill": "aljabar",
+      "active": true
+    },
+    {
+      "id": "A08",
+      "topicId": "aljabar",
+      "difficulty": "Sedang",
+      "question": "Jumlah dan hasil kali akar-akar persamaan 2x² − 6x + 4 = 0 adalah ...",
+      "options": [
+        "3 dan 2",
+        "−3 dan 2",
+        "3 dan −2",
+        "2 dan 3"
+      ],
+      "answer": 0,
+      "solution": "Bagi persamaan dengan 2: x² − 3x + 2 = 0.\nJumlah akar = 3 dan hasil kali akar = 2.",
+      "familyId": "A08",
+      "variantId": 1,
+      "level": 2,
+      "skill": "aljabar",
+      "active": true
+    },
+    {
+      "id": "A09",
+      "topicId": "aljabar",
+      "difficulty": "Sedang",
+      "question": "Penyelesaian dari (x − 3)² = 16 adalah ...",
+      "options": [
+        "x = 7 atau x = 1",
+        "x = −7 atau x = 1",
+        "x = 4 atau x = −4",
+        "x = 7 atau x = −1"
+      ],
+      "answer": 3,
+      "solution": "Ambil akar kedua ruas: x − 3 = ±4.\nJika x − 3 = 4, maka x = 7.\nJika x − 3 = −4, maka x = −1.",
+      "familyId": "A09",
+      "variantId": 1,
+      "level": 2,
+      "skill": "aljabar",
+      "active": true
+    },
+    {
+      "id": "A10",
+      "topicId": "aljabar",
+      "difficulty": "Tantangan",
+      "question": "Grafik y = −x² + 4x mencapai nilai maksimum di titik ...",
+      "options": [
+        "(4, 0)",
+        "(0, 4)",
+        "(2, 4)",
+        "(2, −4)"
+      ],
+      "answer": 2,
+      "solution": "x = −b/(2a) = −4/(2 × −1) = 2.\nSubstitusi x = 2: y = −4 + 8 = 4.\nTitik maksimumnya (2, 4).",
+      "familyId": "A10",
+      "variantId": 1,
+      "level": 3,
+      "skill": "aljabar",
+      "active": true
+    },
+    {
+      "id": "F01",
+      "topicId": "fungsi",
+      "difficulty": "Mudah",
+      "question": "Gradien garis yang melalui titik (2, 3) dan (6, 11) adalah ...",
+      "options": [
+        "2",
+        "4",
+        "8",
+        "1/2"
+      ],
+      "answer": 0,
+      "solution": "m = (y₂ − y₁)/(x₂ − x₁)\nm = (11 − 3)/(6 − 2) = 8/4 = 2.",
+      "familyId": "F01",
+      "variantId": 1,
+      "level": 1,
+      "skill": "fungsi",
+      "active": true
+    },
+    {
+      "id": "F02",
+      "topicId": "fungsi",
+      "difficulty": "Mudah",
+      "question": "Persamaan garis dengan gradien 3 dan melalui titik (1, 5) adalah ...",
+      "options": [
+        "y = 3x − 2",
+        "y = 3x + 5",
+        "y = 5x + 3",
+        "y = 3x + 2"
+      ],
+      "answer": 3,
+      "solution": "Gunakan y = mx + c.\n5 = 3(1) + c, sehingga c = 2.\nPersamaannya y = 3x + 2.",
+      "familyId": "F02",
+      "variantId": 1,
+      "level": 1,
+      "skill": "fungsi",
+      "active": true
+    },
+    {
+      "id": "F03",
+      "topicId": "fungsi",
+      "difficulty": "Mudah",
+      "question": "Garis yang sejajar dengan y = 2x − 5 dan melalui titik (0, 3) adalah ...",
+      "options": [
+        "y = 1/2x + 3",
+        "y = 2x + 3",
+        "y = 2x − 3",
+        "y = −2x + 3"
+      ],
+      "answer": 1,
+      "solution": "Garis sejajar memiliki gradien yang sama, yaitu 2.\nKarena melalui (0, 3), nilai c = 3.\nPersamaannya y = 2x + 3.",
+      "familyId": "F03",
+      "variantId": 1,
+      "level": 1,
+      "skill": "fungsi",
+      "active": true
+    },
+    {
+      "id": "F04",
+      "topicId": "fungsi",
+      "difficulty": "Mudah",
+      "question": "Titik potong garis 3x + 4y = 12 dengan sumbu X adalah ...",
+      "options": [
+        "(0, 3)",
+        "(3, 0)",
+        "(4, 0)",
+        "(0, 4)"
+      ],
+      "answer": 2,
+      "solution": "Pada sumbu X, y = 0.\n3x + 4(0) = 12, sehingga 3x = 12 dan x = 4.\nTitik potongnya (4, 0).",
+      "familyId": "F04",
+      "variantId": 1,
+      "level": 1,
+      "skill": "fungsi",
+      "active": true
+    },
+    {
+      "id": "F05",
+      "topicId": "fungsi",
+      "difficulty": "Mudah",
+      "question": "Jika f(x) = 2x − 7, nilai f(5) adalah ...",
+      "options": [
+        "17",
+        "−3",
+        "2",
+        "3"
+      ],
+      "answer": 3,
+      "solution": "Substitusi x = 5:\nf(5) = 2(5) − 7 = 10 − 7 = 3.",
+      "familyId": "F05",
+      "variantId": 1,
+      "level": 1,
+      "skill": "fungsi",
+      "active": true
+    },
+    {
+      "id": "F06",
+      "topicId": "fungsi",
+      "difficulty": "Sedang",
+      "question": "Fungsi f(x) = ax + b memenuhi f(2) = 5 dan f(4) = 11. Rumus fungsi tersebut adalah ...",
+      "options": [
+        "f(x) = 3x − 1",
+        "f(x) = 3x + 1",
+        "f(x) = 2x + 1",
+        "f(x) = 6x − 7"
+      ],
+      "answer": 0,
+      "solution": "Dari f(2) = 5: 2a + b = 5.\nDari f(4) = 11: 4a + b = 11.\nKurangkan: 2a = 6, maka a = 3.\nSubstitusi: 2(3) + b = 5, maka b = −1.\nRumusnya f(x) = 3x − 1.",
+      "familyId": "F06",
+      "variantId": 1,
+      "level": 2,
+      "skill": "fungsi",
+      "active": true
+    },
+    {
+      "id": "F07",
+      "topicId": "fungsi",
+      "difficulty": "Mudah",
+      "question": "Diketahui relasi {(1, 2), (2, 3), (3, 4)}. Range relasi tersebut adalah ...",
+      "options": [
+        "{1, 2, 3}",
+        "{2, 3, 4}",
+        "{1, 2, 3, 4}",
+        "{4, 3, 2, 1}"
+      ],
+      "answer": 1,
+      "solution": "Range adalah himpunan anggota kedua dari pasangan berurutan.\nAnggota keduanya adalah 2, 3, dan 4, sehingga range = {2, 3, 4}.",
+      "familyId": "F07",
+      "variantId": 1,
+      "level": 1,
+      "skill": "fungsi",
+      "active": true
+    },
+    {
+      "id": "F08",
+      "topicId": "fungsi",
+      "difficulty": "Sedang",
+      "question": "Himpunan pasangan berurutan berikut yang merupakan fungsi adalah ...",
+      "options": [
+        "{(1, 2), (1, 3), (2, 4)}",
+        "{(1, 2), (2, 3), (2, 4)}",
+        "{(1, 2), (2, 3), (3, 4)}",
+        "{(1, 2), (1, 3), (1, 4)}"
+      ],
+      "answer": 2,
+      "solution": "Relasi disebut fungsi jika setiap anggota domain dipasangkan tepat satu kali.\nPada pilihan yang benar, domain 1, 2, dan 3 masing-masing muncul satu kali.\nPilihan lain memiliki anggota domain yang muncul lebih dari sekali.",
+      "familyId": "F08",
+      "variantId": 1,
+      "level": 2,
+      "skill": "fungsi",
+      "active": true
+    },
+    {
+      "id": "F09",
+      "topicId": "fungsi",
+      "difficulty": "Sedang",
+      "question": "Gradien garis 4x − 2y + 6 = 0 adalah ...",
+      "options": [
+        "−2",
+        "−1/2",
+        "1/2",
+        "2"
+      ],
+      "answer": 3,
+      "solution": "Ubah ke bentuk y = mx + c:\n4x − 2y + 6 = 0\n−2y = −4x − 6\ny = 2x + 3.\nGradiennya 2.",
+      "familyId": "F09",
+      "variantId": 1,
+      "level": 2,
+      "skill": "fungsi",
+      "active": true
+    },
+    {
+      "id": "F10",
+      "topicId": "fungsi",
+      "difficulty": "Sedang",
+      "question": "Gradien garis yang tegak lurus dengan garis y = 2x + 1 adalah ...",
+      "options": [
+        "2",
+        "−2",
+        "−1/2",
+        "1/2"
+      ],
+      "answer": 2,
+      "solution": "Gradien garis y = 2x + 1 adalah 2.\nDua garis tegak lurus jika hasil kali gradiennya −1.\nMaka gradien yang dicari adalah −1/2.",
+      "familyId": "F10",
+      "variantId": 1,
+      "level": 2,
+      "skill": "fungsi",
+      "active": true
+    },
+    {
+      "id": "G01",
+      "topicId": "geometri",
+      "difficulty": "Mudah",
+      "question": "Segitiga siku-siku memiliki panjang sisi tegak 6 cm dan 8 cm. Panjang sisi miringnya adalah ...",
+      "options": [
+        "7 cm",
+        "10 cm",
+        "12 cm",
+        "14 cm"
+      ],
+      "answer": 1,
+      "solution": "Gunakan teorema Pythagoras:\nc² = 6² + 8² = 36 + 64 = 100.\nc = √100 = 10 cm.",
+      "familyId": "G01",
+      "variantId": 1,
+      "level": 1,
+      "skill": "geometri",
+      "active": true
+    },
+    {
+      "id": "G02",
+      "topicId": "geometri",
+      "difficulty": "Mudah",
+      "question": "Luas lingkaran dengan jari-jari 7 cm adalah ... (π = 22/7)",
+      "options": [
+        "154 cm²",
+        "308 cm²",
+        "44 cm²",
+        "77 cm²"
+      ],
+      "answer": 0,
+      "solution": "L = πr² = 22/7 × 7² = 22/7 × 49 = 154 cm².",
+      "familyId": "G02",
+      "variantId": 1,
+      "level": 1,
+      "skill": "geometri",
+      "active": true
+    },
+    {
+      "id": "G03",
+      "topicId": "geometri",
+      "difficulty": "Mudah",
+      "question": "Keliling lingkaran dengan diameter 20 cm adalah ... (π = 3,14)",
+      "options": [
+        "314 cm",
+        "31,4 cm",
+        "62,8 cm",
+        "125,6 cm"
+      ],
+      "answer": 2,
+      "solution": "K = πd = 3,14 × 20 = 62,8 cm.",
+      "familyId": "G03",
+      "variantId": 1,
+      "level": 1,
+      "skill": "geometri",
+      "active": true
+    },
+    {
+      "id": "G04",
+      "topicId": "geometri",
+      "difficulty": "Sedang",
+      "question": "Dua segitiga sebangun memiliki sisi 3 cm, 4 cm, 5 cm dan 9 cm, 12 cm, x cm. Nilai x adalah ...",
+      "options": [
+        "15 cm",
+        "18 cm",
+        "10 cm",
+        "12 cm"
+      ],
+      "answer": 0,
+      "solution": "Perbandingan sisi yang bersesuaian adalah 3/9 = 1/3.\nMaka 5/x = 1/3, sehingga x = 15 cm.",
+      "familyId": "G04",
+      "variantId": 1,
+      "level": 2,
+      "skill": "geometri",
+      "active": true
+    },
+    {
+      "id": "G05",
+      "topicId": "geometri",
+      "difficulty": "Sedang",
+      "question": "Volume tabung dengan jari-jari 7 cm dan tinggi 10 cm adalah ... (π = 22/7)",
+      "options": [
+        "770 cm³",
+        "1.540 cm³",
+        "2.200 cm³",
+        "3.080 cm³"
+      ],
+      "answer": 1,
+      "solution": "V = πr²t = 22/7 × 7² × 10\nV = 22/7 × 49 × 10 = 1.540 cm³.",
+      "familyId": "G05",
+      "variantId": 1,
+      "level": 2,
+      "skill": "geometri",
+      "active": true
+    },
+    {
+      "id": "G06",
+      "topicId": "geometri",
+      "difficulty": "Sedang",
+      "question": "Volume kerucut dengan jari-jari 6 cm dan tinggi 7 cm adalah ... (π = 22/7)",
+      "options": [
+        "528 cm³",
+        "792 cm³",
+        "132 cm³",
+        "264 cm³"
+      ],
+      "answer": 3,
+      "solution": "V = 1/3 πr²t = 1/3 × 22/7 × 6² × 7\nV = 1/3 × 22/7 × 36 × 7 = 264 cm³.",
+      "familyId": "G06",
+      "variantId": 1,
+      "level": 2,
+      "skill": "geometri",
+      "active": true
+    },
+    {
+      "id": "G07",
+      "topicId": "geometri",
+      "difficulty": "Sedang",
+      "question": "Volume bola dengan jari-jari 3 cm adalah ...",
+      "options": [
+        "108π cm³",
+        "9π cm³",
+        "18π cm³",
+        "36π cm³"
+      ],
+      "answer": 3,
+      "solution": "V = 4/3 πr³ = 4/3 × π × 3³\nV = 4/3 × 27π = 36π cm³.",
+      "familyId": "G07",
+      "variantId": 1,
+      "level": 2,
+      "skill": "geometri",
+      "active": true
+    },
+    {
+      "id": "G08",
+      "topicId": "geometri",
+      "difficulty": "Sedang",
+      "question": "Persegi panjang berukuran 12 cm × 8 cm memiliki diagonal ...",
+      "options": [
+        "10 cm",
+        "4√10 cm",
+        "4√13 cm",
+        "20 cm"
+      ],
+      "answer": 2,
+      "solution": "Diagonal = √(12² + 8²) = √(144 + 64) = √208.\n√208 = √(16 × 13) = 4√13 cm.",
+      "familyId": "G08",
+      "variantId": 1,
+      "level": 2,
+      "skill": "geometri",
+      "active": true
+    },
+    {
+      "id": "G09",
+      "topicId": "geometri",
+      "difficulty": "Sedang",
+      "question": "Panjang busur lingkaran dengan sudut pusat 90° dan jari-jari 14 cm adalah ... (π = 22/7)",
+      "options": [
+        "22 cm",
+        "44 cm",
+        "88 cm",
+        "11 cm"
+      ],
+      "answer": 0,
+      "solution": "Panjang busur = sudut/360° × keliling lingkaran.\n= 90/360 × 2 × 22/7 × 14\n= 1/4 × 88 = 22 cm.",
+      "familyId": "G09",
+      "variantId": 1,
+      "level": 2,
+      "skill": "geometri",
+      "active": true
+    },
+    {
+      "id": "G10",
+      "topicId": "geometri",
+      "difficulty": "Sedang",
+      "question": "Volume kubus 64 cm³. Luas permukaan kubus tersebut adalah ...",
+      "options": [
+        "64 cm²",
+        "96 cm²",
+        "128 cm²",
+        "16 cm²"
+      ],
+      "answer": 1,
+      "solution": "Volume kubus s³ = 64, maka s = 4 cm.\nLuas permukaan = 6s² = 6 × 16 = 96 cm².",
+      "familyId": "G10",
+      "variantId": 1,
+      "level": 2,
+      "skill": "geometri",
+      "active": true
+    },
+    {
+      "id": "S01",
+      "topicId": "statistika",
+      "difficulty": "Mudah",
+      "question": "Rata-rata dari data 6, 7, 8, 9, 10 adalah ...",
+      "options": [
+        "8",
+        "8,5",
+        "7",
+        "7,5"
+      ],
+      "answer": 0,
+      "solution": "Jumlah data = 6 + 7 + 8 + 9 + 10 = 40.\nBanyak data = 5.\nRata-rata = 40/5 = 8.",
+      "familyId": "S01",
+      "variantId": 1,
+      "level": 1,
+      "skill": "statistika",
+      "active": true
+    },
+    {
+      "id": "S02",
+      "topicId": "statistika",
+      "difficulty": "Mudah",
+      "question": "Median dari data 3, 5, 8, 9, 12, 15 adalah ...",
+      "options": [
+        "9,5",
+        "8",
+        "8,5",
+        "9"
+      ],
+      "answer": 2,
+      "solution": "Banyak data genap, yaitu 6.\nMedian = (data ke-3 + data ke-4)/2 = (8 + 9)/2 = 8,5.",
+      "familyId": "S02",
+      "variantId": 1,
+      "level": 1,
+      "skill": "statistika",
+      "active": true
+    },
+    {
+      "id": "S03",
+      "topicId": "statistika",
+      "difficulty": "Mudah",
+      "question": "Modus dari data 4, 5, 5, 6, 7, 7, 7, 8 adalah ...",
+      "options": [
+        "6",
+        "7",
+        "4",
+        "5"
+      ],
+      "answer": 1,
+      "solution": "Nilai 7 muncul sebanyak tiga kali, lebih sering daripada nilai lainnya.\nJadi modusnya 7.",
+      "familyId": "S03",
+      "variantId": 1,
+      "level": 1,
+      "skill": "statistika",
+      "active": true
+    },
+    {
+      "id": "S04",
+      "topicId": "statistika",
+      "difficulty": "Mudah",
+      "question": "Median dari data 12, 15, 11, 17, 14 adalah ...",
+      "options": [
+        "15",
+        "17",
+        "12",
+        "14"
+      ],
+      "answer": 3,
+      "solution": "Urutkan data: 11, 12, 14, 15, 17.\nData tengah adalah 14, jadi mediannya 14.",
+      "familyId": "S04",
+      "variantId": 1,
+      "level": 1,
+      "skill": "statistika",
+      "active": true
+    },
+    {
+      "id": "S05",
+      "topicId": "statistika",
+      "difficulty": "Mudah",
+      "question": "Sebuah dadu dilempar satu kali. Peluang muncul angka genap adalah ...",
+      "options": [
+        "2/3",
+        "1/6",
+        "1/3",
+        "1/2"
+      ],
+      "answer": 3,
+      "solution": "Angka genap pada dadu adalah 2, 4, dan 6, sebanyak 3 angka.\nRuang sampel dadu ada 6.\nPeluang = 3/6 = 1/2.",
+      "familyId": "S05",
+      "variantId": 1,
+      "level": 1,
+      "skill": "statistika",
+      "active": true
+    },
+    {
+      "id": "S06",
+      "topicId": "statistika",
+      "difficulty": "Mudah",
+      "question": "Sebuah kantong berisi 5 bola merah, 3 bola biru, dan 2 bola hijau. Peluang terambil bola merah adalah ...",
+      "options": [
+        "1/2",
+        "2/5",
+        "1/5",
+        "3/10"
+      ],
+      "answer": 0,
+      "solution": "Jumlah seluruh bola = 5 + 3 + 2 = 10.\nBola merah ada 5.\nPeluang = 5/10 = 1/2.",
+      "familyId": "S06",
+      "variantId": 1,
+      "level": 1,
+      "skill": "statistika",
+      "active": true
+    },
+    {
+      "id": "S07",
+      "topicId": "statistika",
+      "difficulty": "Mudah",
+      "question": "Dua koin dilempar bersamaan. Peluang muncul dua sisi kepala adalah ...",
+      "options": [
+        "1/2",
+        "1/3",
+        "1/4",
+        "3/4"
+      ],
+      "answer": 2,
+      "solution": "Ruang sampelnya {KK, KM, MK, MM}, sebanyak 4.\nKejadian dua kepala hanya KK, sebanyak 1.\nPeluang = 1/4.",
+      "familyId": "S07",
+      "variantId": 1,
+      "level": 1,
+      "skill": "statistika",
+      "active": true
+    },
+    {
+      "id": "S08",
+      "topicId": "statistika",
+      "difficulty": "Tantangan",
+      "question": "Rata-rata 5 bilangan adalah 8. Setelah satu bilangan dihapus, rata-rata 4 bilangan yang tersisa adalah 9. Bilangan yang dihapus adalah ...",
+      "options": [
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "answer": 1,
+      "solution": "Jumlah 5 bilangan = 5 × 8 = 40.\nJumlah 4 bilangan = 4 × 9 = 36.\nBilangan yang dihapus = 40 − 36 = 4.",
+      "familyId": "S08",
+      "variantId": 1,
+      "level": 3,
+      "skill": "statistika",
+      "active": true
+    },
+    {
+      "id": "S09",
+      "topicId": "statistika",
+      "difficulty": "Sedang",
+      "question": "Modus dari data 7, 8, 8, 9, 10, 10, 10, 11 adalah ...",
+      "options": [
+        "10",
+        "8",
+        "9",
+        "9,5"
+      ],
+      "answer": 0,
+      "solution": "Nilai 10 muncul tiga kali, sedangkan nilai 8 muncul dua kali dan nilai lainnya satu kali.\nJadi modusnya 10.",
+      "familyId": "S09",
+      "variantId": 1,
+      "level": 2,
+      "skill": "statistika",
+      "active": true
+    },
+    {
+      "id": "S10",
+      "topicId": "statistika",
+      "difficulty": "Mudah",
+      "question": "Peluang hujan pada suatu hari adalah 0,35. Peluang tidak hujan adalah ...",
+      "options": [
+        "0,35",
+        "0,45",
+        "0,65",
+        "0,75"
+      ],
+      "answer": 2,
+      "solution": "Jumlah peluang kejadian dan komplemennya adalah 1.\nPeluang tidak hujan = 1 − 0,35 = 0,65.",
+      "familyId": "S10",
+      "variantId": 1,
+      "level": 1,
+      "skill": "statistika",
+      "active": true
+    },
+    {
+      "id": "P01",
+      "topicId": "perbandingan",
+      "difficulty": "Mudah",
+      "question": "Perbandingan dua bilangan adalah 3 : 4. Jika jumlah keduanya 35, bilangan yang lebih besar adalah ...",
+      "options": [
+        "21",
+        "24",
+        "15",
+        "20"
+      ],
+      "answer": 3,
+      "solution": "Jumlah bagian = 3 + 4 = 7.\nBilangan terbesar = 4/7 × 35 = 20.",
+      "familyId": "P01",
+      "variantId": 1,
+      "level": 1,
+      "skill": "perbandingan",
+      "active": true
+    },
+    {
+      "id": "P02",
+      "topicId": "perbandingan",
+      "difficulty": "Mudah",
+      "question": "Skala sebuah peta 1 : 200. Jika panjang pada peta 5 cm, panjang sebenarnya adalah ...",
+      "options": [
+        "1 m",
+        "10 m",
+        "100 m",
+        "1.000 m"
+      ],
+      "answer": 1,
+      "solution": "Panjang sebenarnya = 5 × 200 = 1.000 cm.\n1.000 cm = 10 m.",
+      "familyId": "P02",
+      "variantId": 1,
+      "level": 1,
+      "skill": "perbandingan",
+      "active": true
+    },
+    {
+      "id": "P03",
+      "topicId": "perbandingan",
+      "difficulty": "Sedang",
+      "question": "Delapan pekerja menyelesaikan sebuah pekerjaan dalam 12 hari. Jika pekerja menjadi 6 orang, pekerjaan itu selesai dalam ...",
+      "options": [
+        "9 hari",
+        "14 hari",
+        "16 hari",
+        "18 hari"
+      ],
+      "answer": 2,
+      "solution": "Perbandingan berbalik nilai:\n8 × 12 = 6 × x\n96 = 6x, sehingga x = 16 hari.",
+      "familyId": "P03",
+      "variantId": 1,
+      "level": 2,
+      "skill": "perbandingan",
+      "active": true
+    },
+    {
+      "id": "P04",
+      "topicId": "perbandingan",
+      "difficulty": "Mudah",
+      "question": "Harga sebuah tas Rp80.000 dan mendapat diskon 25%. Harga yang dibayar adalah ...",
+      "options": [
+        "Rp60.000",
+        "Rp65.000",
+        "Rp70.000",
+        "Rp55.000"
+      ],
+      "answer": 0,
+      "solution": "Diskon = 25% × 80.000 = 20.000.\nHarga bayar = 80.000 − 20.000 = Rp60.000.",
+      "familyId": "P04",
+      "variantId": 1,
+      "level": 1,
+      "skill": "perbandingan",
+      "active": true
+    },
+    {
+      "id": "P05",
+      "topicId": "perbandingan",
+      "difficulty": "Sedang",
+      "question": "Barang dibeli dengan harga Rp50.000 dan dijual Rp65.000. Persentase untungnya adalah ...",
+      "options": [
+        "15%",
+        "20%",
+        "25%",
+        "30%"
+      ],
+      "answer": 3,
+      "solution": "Untung = 65.000 − 50.000 = 15.000.\nPersentase untung = 15.000/50.000 × 100% = 30%.",
+      "familyId": "P05",
+      "variantId": 1,
+      "level": 2,
+      "skill": "perbandingan",
+      "active": true
+    },
+    {
+      "id": "P06",
+      "topicId": "perbandingan",
+      "difficulty": "Sedang",
+      "question": "Modal Rp2.000.000 disimpan dengan bunga tunggal 6% per tahun selama 9 bulan. Besar bunganya adalah ...",
+      "options": [
+        "Rp60.000",
+        "Rp90.000",
+        "Rp120.000",
+        "Rp180.000"
+      ],
+      "answer": 1,
+      "solution": "Bunga = modal × suku bunga × waktu\n= 2.000.000 × 6% × 9/12\n= 2.000.000 × 0,06 × 0,75 = Rp90.000.",
+      "familyId": "P06",
+      "variantId": 1,
+      "level": 2,
+      "skill": "perbandingan",
+      "active": true
+    },
+    {
+      "id": "P07",
+      "topicId": "perbandingan",
+      "difficulty": "Mudah",
+      "question": "Tiga bilangan memiliki perbandingan 2 : 3 : 5. Jika jumlahnya 100, bilangan terbesar adalah ...",
+      "options": [
+        "20",
+        "30",
+        "50",
+        "60"
+      ],
+      "answer": 2,
+      "solution": "Jumlah bagian = 2 + 3 + 5 = 10.\nBilangan terbesar = 5/10 × 100 = 50.",
+      "familyId": "P07",
+      "variantId": 1,
+      "level": 1,
+      "skill": "perbandingan",
+      "active": true
+    },
+    {
+      "id": "P08",
+      "topicId": "perbandingan",
+      "difficulty": "Mudah",
+      "question": "Nilai 15% dari 240 adalah ...",
+      "options": [
+        "36",
+        "48",
+        "24",
+        "30"
+      ],
+      "answer": 0,
+      "solution": "15% × 240 = 0,15 × 240 = 36.",
+      "familyId": "P08",
+      "variantId": 1,
+      "level": 1,
+      "skill": "perbandingan",
+      "active": true
+    },
+    {
+      "id": "P09",
+      "topicId": "perbandingan",
+      "difficulty": "Mudah",
+      "question": "Harga 4 kg apel adalah Rp60.000. Harga 7 kg apel adalah ...",
+      "options": [
+        "Rp110.000",
+        "Rp90.000",
+        "Rp100.000",
+        "Rp105.000"
+      ],
+      "answer": 3,
+      "solution": "Harga per kg = 60.000/4 = 15.000.\nHarga 7 kg = 7 × 15.000 = Rp105.000.",
+      "familyId": "P09",
+      "variantId": 1,
+      "level": 1,
+      "skill": "perbandingan",
+      "active": true
+    },
+    {
+      "id": "P10",
+      "topicId": "perbandingan",
+      "difficulty": "Mudah",
+      "question": "Tinggi sebuah model 8 cm dengan skala 1 : 50. Tinggi sebenarnya adalah ...",
+      "options": [
+        "0,4 m",
+        "4 m",
+        "40 m",
+        "400 m"
+      ],
+      "answer": 1,
+      "solution": "Tinggi sebenarnya = 8 × 50 = 400 cm.\n400 cm = 4 m.",
+      "familyId": "P10",
+      "variantId": 1,
+      "level": 1,
+      "skill": "perbandingan",
+      "active": true
+    },
+    {
+      "id": "G-001",
+      "topicId": "bilangan",
+      "difficulty": "Mudah",
+      "question": "Hasil dari (5² × 5³) ÷ 5² adalah ...",
+      "options": [
+        "25",
+        "3125",
+        "625",
+        "125"
+      ],
+      "answer": 3,
+      "solution": "5² × 5³ = 5⁵.\nKemudian 5⁵ ÷ 5² = 5³ = 125.",
+      "familyId": "BIL-EKSP",
+      "variantId": 1,
+      "level": 1,
+      "skill": "bilangan",
+      "active": true
+    },
+    {
+      "id": "G-002",
+      "topicId": "bilangan",
+      "difficulty": "Mudah",
+      "question": "Hasil dari (5² × 5³) ÷ 5⁴ adalah ...",
+      "options": [
+        "3125",
+        "5",
+        "125",
+        "25"
+      ],
+      "answer": 1,
+      "solution": "5² × 5³ = 5⁵.\nKemudian 5⁵ ÷ 5⁴ = 5¹ = 5.",
+      "familyId": "BIL-EKSP",
+      "variantId": 2,
+      "level": 1,
+      "skill": "bilangan",
+      "active": true
+    },
+    {
+      "id": "G-003",
+      "topicId": "bilangan",
+      "difficulty": "Mudah",
+      "question": "Hasil dari (5⁴ × 5³) ÷ 5⁵ adalah ...",
+      "options": [
+        "25",
+        "125",
+        "5",
+        "625"
+      ],
+      "answer": 0,
+      "solution": "5⁴ × 5³ = 5⁷.\nKemudian 5⁷ ÷ 5⁵ = 5² = 25.",
+      "familyId": "BIL-EKSP",
+      "variantId": 3,
+      "level": 1,
+      "skill": "bilangan",
+      "active": true
+    },
+    {
+      "id": "G-004",
+      "topicId": "bilangan",
+      "difficulty": "Mudah",
+      "question": "Hasil dari (2⁴ × 2⁴) ÷ 2⁵ adalah ...",
+      "options": [
+        "16",
+        "32",
+        "4",
+        "8"
+      ],
+      "answer": 3,
+      "solution": "2⁴ × 2⁴ = 2⁸.\nKemudian 2⁸ ÷ 2⁵ = 2³ = 8.",
+      "familyId": "BIL-EKSP",
+      "variantId": 4,
+      "level": 1,
+      "skill": "bilangan",
+      "active": true
+    },
+    {
+      "id": "G-005",
+      "topicId": "bilangan",
+      "difficulty": "Mudah",
+      "question": "Hasil dari (2⁴ × 2²) ÷ 2⁵ adalah ...",
+      "options": [
+        "8",
+        "4",
+        "64",
+        "2"
+      ],
+      "answer": 3,
+      "solution": "2⁴ × 2² = 2⁶.\nKemudian 2⁶ ÷ 2⁵ = 2¹ = 2.",
+      "familyId": "BIL-EKSP",
+      "variantId": 5,
+      "level": 1,
+      "skill": "bilangan",
+      "active": true
+    },
+    {
+      "id": "G-006",
+      "topicId": "bilangan",
+      "difficulty": "Sedang",
+      "question": "Hasil dari √5 + 4√5 − √5 adalah ...",
+      "options": [
+        "6√5",
+        "4√5",
+        "3√5",
+        "5√5"
+      ],
+      "answer": 1,
+      "solution": "Jumlahkan koefisien akar yang sejenis:\n(1 + 4 − 1)√5 = 4√5.",
+      "familyId": "BIL-AKAR",
+      "variantId": 1,
+      "level": 2,
+      "skill": "bilangan",
+      "active": true
+    },
+    {
+      "id": "G-007",
+      "topicId": "bilangan",
+      "difficulty": "Sedang",
+      "question": "Hasil dari 4√5 + √5 − 3√5 adalah ...",
+      "options": [
+        "2√5",
+        "4√5",
+        "√5",
+        "3√5"
+      ],
+      "answer": 0,
+      "solution": "Jumlahkan koefisien akar yang sejenis:\n(4 + 1 − 3)√5 = 2√5.",
+      "familyId": "BIL-AKAR",
+      "variantId": 2,
+      "level": 2,
+      "skill": "bilangan",
+      "active": true
+    },
+    {
+      "id": "G-009",
+      "topicId": "bilangan",
+      "difficulty": "Sedang",
+      "question": "Hasil dari 4√5 + 2√5 − 4√5 adalah ...",
+      "options": [
+        "√5",
+        "3√5",
+        "4√5",
+        "2√5"
+      ],
+      "answer": 3,
+      "solution": "Jumlahkan koefisien akar yang sejenis:\n(4 + 2 − 4)√5 = 2√5.",
+      "familyId": "BIL-AKAR",
+      "variantId": 4,
+      "level": 2,
+      "skill": "bilangan",
+      "active": true
+    },
+    {
+      "id": "G-010",
+      "topicId": "bilangan",
+      "difficulty": "Sedang",
+      "question": "Hasil dari 3√6 + 3√6 − √6 adalah ...",
+      "options": [
+        "7√6",
+        "5√6",
+        "6√6",
+        "4√6"
+      ],
+      "answer": 1,
+      "solution": "Jumlahkan koefisien akar yang sejenis:\n(3 + 3 − 1)√6 = 5√6.",
+      "familyId": "BIL-AKAR",
+      "variantId": 5,
+      "level": 2,
+      "skill": "bilangan",
+      "active": true
+    },
+    {
+      "id": "G-011",
+      "topicId": "bilangan",
+      "difficulty": "Mudah",
+      "question": "Notasi ilmiah dari 0,00032 adalah ...",
+      "options": [
+        "3,2 × 10-⁴",
+        "3,2 × 10-⁵",
+        "3,2 × 10-²",
+        "3,2 × 10-³"
+      ],
+      "answer": 0,
+      "solution": "Geser koma sehingga menjadi 3,2. Koma bergeser 4 tempat, sehingga pangkatnya -4.\nJadi 3,2 × 10-⁴.",
+      "familyId": "BIL-NOTASI",
+      "variantId": 1,
+      "level": 1,
+      "skill": "bilangan",
+      "active": true
+    },
+    {
+      "id": "G-012",
+      "topicId": "bilangan",
+      "difficulty": "Mudah",
+      "question": "Notasi ilmiah dari 0,000064 adalah ...",
+      "options": [
+        "6,4 × 10-⁴",
+        "6,4 × 10-⁶",
+        "6,4 × 10-⁵",
+        "6,4 × 10-³"
+      ],
+      "answer": 2,
+      "solution": "Geser koma sehingga menjadi 6,4. Koma bergeser 5 tempat, sehingga pangkatnya -5.\nJadi 6,4 × 10-⁵.",
+      "familyId": "BIL-NOTASI",
+      "variantId": 2,
+      "level": 1,
+      "skill": "bilangan",
+      "active": true
+    },
+    {
+      "id": "G-013",
+      "topicId": "bilangan",
+      "difficulty": "Mudah",
+      "question": "Notasi ilmiah dari 0,000025 adalah ...",
+      "options": [
+        "2,5 × 10-³",
+        "2,5 × 10-⁶",
+        "2,5 × 10-⁵",
+        "2,5 × 10-⁴"
+      ],
+      "answer": 2,
+      "solution": "Geser koma sehingga menjadi 2,5. Koma bergeser 5 tempat, sehingga pangkatnya -5.\nJadi 2,5 × 10-⁵.",
+      "familyId": "BIL-NOTASI",
+      "variantId": 3,
+      "level": 1,
+      "skill": "bilangan",
+      "active": true
+    },
+    {
+      "id": "G-014",
+      "topicId": "bilangan",
+      "difficulty": "Mudah",
+      "question": "Notasi ilmiah dari 0,0085 adalah ...",
+      "options": [
+        "8,5 × 10-³",
+        "8,5 × 10-¹",
+        "8,5 × 10-⁴",
+        "8,5 × 10-²"
+      ],
+      "answer": 0,
+      "solution": "Geser koma sehingga menjadi 8,5. Koma bergeser 3 tempat, sehingga pangkatnya -3.\nJadi 8,5 × 10-³.",
+      "familyId": "BIL-NOTASI",
+      "variantId": 4,
+      "level": 1,
+      "skill": "bilangan",
+      "active": true
+    },
+    {
+      "id": "G-015",
+      "topicId": "bilangan",
+      "difficulty": "Mudah",
+      "question": "Notasi ilmiah dari 0,0064 adalah ...",
+      "options": [
+        "6,4 × 10-¹",
+        "6,4 × 10-³",
+        "6,4 × 10-²",
+        "6,4 × 10-⁴"
+      ],
+      "answer": 1,
+      "solution": "Geser koma sehingga menjadi 6,4. Koma bergeser 3 tempat, sehingga pangkatnya -3.\nJadi 6,4 × 10-³.",
+      "familyId": "BIL-NOTASI",
+      "variantId": 5,
+      "level": 1,
+      "skill": "bilangan",
+      "active": true
+    },
+    {
+      "id": "G-016",
+      "topicId": "bilangan",
+      "difficulty": "Sedang",
+      "question": "Bentuk sederhana dari 20/√5 adalah ...",
+      "options": [
+        "4√5",
+        "7√5",
+        "5√5",
+        "6√5"
+      ],
+      "answer": 0,
+      "solution": "Kalikan pembilang dan penyebut dengan √5:\n20/√5 × √5/√5 = 20√5/5 = 4√5.",
+      "familyId": "BIL-RASIONAL",
+      "variantId": 1,
+      "level": 2,
+      "skill": "bilangan",
+      "active": true
+    },
+    {
+      "id": "G-018",
+      "topicId": "bilangan",
+      "difficulty": "Sedang",
+      "question": "Bentuk sederhana dari 2/√2 adalah ...",
+      "options": [
+        "4√2",
+        "√2",
+        "2√2",
+        "3√2"
+      ],
+      "answer": 1,
+      "solution": "Kalikan pembilang dan penyebut dengan √2:\n2/√2 × √2/√2 = 2√2/2 = √2.",
+      "familyId": "BIL-RASIONAL",
+      "variantId": 3,
+      "level": 2,
+      "skill": "bilangan",
+      "active": true
+    },
+    {
+      "id": "G-020",
+      "topicId": "bilangan",
+      "difficulty": "Sedang",
+      "question": "Bentuk sederhana dari 15/√5 adalah ...",
+      "options": [
+        "5√5",
+        "4√5",
+        "3√5",
+        "6√5"
+      ],
+      "answer": 2,
+      "solution": "Kalikan pembilang dan penyebut dengan √5:\n15/√5 × √5/√5 = 15√5/5 = 3√5.",
+      "familyId": "BIL-RASIONAL",
+      "variantId": 5,
+      "level": 2,
+      "skill": "bilangan",
+      "active": true
+    },
+    {
+      "id": "G-021",
+      "topicId": "bilangan",
+      "difficulty": "Sedang",
+      "question": "Hasil dari (5√3)² adalah ...",
+      "options": [
+        "15",
+        "28",
+        "30",
+        "75"
+      ],
+      "answer": 3,
+      "solution": "(5√3)² = 5² × (√3)² = 25 × 3 = 75.",
+      "familyId": "BIL-KUADRAT-AKAR",
+      "variantId": 1,
+      "level": 2,
+      "skill": "bilangan",
+      "active": true
+    },
+    {
+      "id": "G-022",
+      "topicId": "bilangan",
+      "difficulty": "Sedang",
+      "question": "Hasil dari (2√7)² adalah ...",
+      "options": [
+        "28",
+        "14",
+        "98",
+        "11"
+      ],
+      "answer": 0,
+      "solution": "(2√7)² = 2² × (√7)² = 4 × 7 = 28.",
+      "familyId": "BIL-KUADRAT-AKAR",
+      "variantId": 2,
+      "level": 2,
+      "skill": "bilangan",
+      "active": true
+    },
+    {
+      "id": "G-023",
+      "topicId": "bilangan",
+      "difficulty": "Sedang",
+      "question": "Hasil dari (5√5)² adalah ...",
+      "options": [
+        "50",
+        "125",
+        "25",
+        "30"
+      ],
+      "answer": 1,
+      "solution": "(5√5)² = 5² × (√5)² = 25 × 5 = 125.",
+      "familyId": "BIL-KUADRAT-AKAR",
+      "variantId": 3,
+      "level": 2,
+      "skill": "bilangan",
+      "active": true
+    },
+    {
+      "id": "G-024",
+      "topicId": "bilangan",
+      "difficulty": "Sedang",
+      "question": "Hasil dari (4√6)² adalah ...",
+      "options": [
+        "48",
+        "24",
+        "22",
+        "96"
+      ],
+      "answer": 3,
+      "solution": "(4√6)² = 4² × (√6)² = 16 × 6 = 96.",
+      "familyId": "BIL-KUADRAT-AKAR",
+      "variantId": 4,
+      "level": 2,
+      "skill": "bilangan",
+      "active": true
+    },
+    {
+      "id": "G-025",
+      "topicId": "bilangan",
+      "difficulty": "Sedang",
+      "question": "Hasil dari (4√3)² adalah ...",
+      "options": [
+        "48",
+        "24",
+        "19",
+        "12"
+      ],
+      "answer": 0,
+      "solution": "(4√3)² = 4² × (√3)² = 16 × 3 = 48.",
+      "familyId": "BIL-KUADRAT-AKAR",
+      "variantId": 5,
+      "level": 2,
+      "skill": "bilangan",
+      "active": true
+    },
+    {
+      "id": "G-026",
+      "topicId": "bilangan",
+      "difficulty": "Sedang",
+      "question": "Nilai terbesar di antara bilangan berikut adalah ...",
+      "options": [
+        "3√5",
+        "3√3",
+        "5√5",
+        "3√2"
+      ],
+      "answer": 2,
+      "solution": "Bandingkan nilai pendekatannya:\n5√5 ≈ 11.18\n3√5 ≈ 6.71\n3√2 ≈ 4.24\n3√3 ≈ 5.20\nJadi yang terbesar adalah 5√5.",
+      "familyId": "BIL-TERBESAR",
+      "variantId": 1,
+      "level": 2,
+      "skill": "bilangan",
+      "active": true
+    },
+    {
+      "id": "G-027",
+      "topicId": "bilangan",
+      "difficulty": "Sedang",
+      "question": "Nilai terbesar di antara bilangan berikut adalah ...",
+      "options": [
+        "4√5",
+        "2√2",
+        "√6",
+        "√5"
+      ],
+      "answer": 0,
+      "solution": "Bandingkan nilai pendekatannya:\n√6 ≈ 2.45\n2√2 ≈ 2.83\n4√5 ≈ 8.94\n√5 ≈ 2.24\nJadi yang terbesar adalah 4√5.",
+      "familyId": "BIL-TERBESAR",
+      "variantId": 2,
+      "level": 2,
+      "skill": "bilangan",
+      "active": true
+    },
+    {
+      "id": "G-028",
+      "topicId": "bilangan",
+      "difficulty": "Sedang",
+      "question": "Nilai terbesar di antara bilangan berikut adalah ...",
+      "options": [
+        "√7",
+        "3√3",
+        "4√6",
+        "√2"
+      ],
+      "answer": 2,
+      "solution": "Bandingkan nilai pendekatannya:\n4√6 ≈ 9.80\n√2 ≈ 1.41\n√7 ≈ 2.65\n3√3 ≈ 5.20\nJadi yang terbesar adalah 4√6.",
+      "familyId": "BIL-TERBESAR",
+      "variantId": 3,
+      "level": 2,
+      "skill": "bilangan",
+      "active": true
+    },
+    {
+      "id": "G-029",
+      "topicId": "bilangan",
+      "difficulty": "Sedang",
+      "question": "Nilai terbesar di antara bilangan berikut adalah ...",
+      "options": [
+        "5√2",
+        "4√7",
+        "5√6",
+        "3√3"
+      ],
+      "answer": 2,
+      "solution": "Bandingkan nilai pendekatannya:\n3√3 ≈ 5.20\n4√7 ≈ 10.58\n5√2 ≈ 7.07\n5√6 ≈ 12.25\nJadi yang terbesar adalah 5√6.",
+      "familyId": "BIL-TERBESAR",
+      "variantId": 4,
+      "level": 2,
+      "skill": "bilangan",
+      "active": true
+    },
+    {
+      "id": "G-030",
+      "topicId": "bilangan",
+      "difficulty": "Sedang",
+      "question": "Nilai terbesar di antara bilangan berikut adalah ...",
+      "options": [
+        "√5",
+        "4√7",
+        "3√3",
+        "3√5"
+      ],
+      "answer": 1,
+      "solution": "Bandingkan nilai pendekatannya:\n4√7 ≈ 10.58\n3√3 ≈ 5.20\n√5 ≈ 2.24\n3√5 ≈ 6.71\nJadi yang terbesar adalah 4√7.",
+      "familyId": "BIL-TERBESAR",
+      "variantId": 5,
+      "level": 2,
+      "skill": "bilangan",
+      "active": true
+    },
+    {
+      "id": "G-031",
+      "topicId": "aljabar",
+      "difficulty": "Mudah",
+      "question": "Akar-akar persamaan x² + 3x + 2 = 0 adalah ...",
+      "options": [
+        "1 dan 2",
+        "-1 dan -2",
+        "-1 dan -3",
+        "0 dan -2"
+      ],
+      "answer": 1,
+      "solution": "Faktorkan: x² + 3x + 2 = (x + 1)(x + 2).\nAkar-akarnya -1 dan -2.",
+      "familyId": "ALJ-AKAR",
+      "variantId": 1,
+      "level": 1,
+      "skill": "aljabar",
+      "active": true
+    },
+    {
+      "id": "G-032",
+      "topicId": "aljabar",
+      "difficulty": "Mudah",
+      "question": "Akar-akar persamaan x² − 8x + 15 = 0 adalah ...",
+      "options": [
+        "5 dan 3",
+        "6 dan 3",
+        "-5 dan -3",
+        "5 dan 2"
+      ],
+      "answer": 0,
+      "solution": "Faktorkan: x² − 8x + 15 = (x − 5)(x − 3).\nAkar-akarnya 5 dan 3.",
+      "familyId": "ALJ-AKAR",
+      "variantId": 2,
+      "level": 1,
+      "skill": "aljabar",
+      "active": true
+    },
+    {
+      "id": "G-033",
+      "topicId": "aljabar",
+      "difficulty": "Mudah",
+      "question": "Akar-akar persamaan x² − 2x − 15 = 0 adalah ...",
+      "options": [
+        "5 dan -4",
+        "6 dan -3",
+        "-5 dan 3",
+        "5 dan -3"
+      ],
+      "answer": 3,
+      "solution": "Faktorkan: x² − 2x − 15 = (x − 5)(x + 3).\nAkar-akarnya 5 dan -3.",
+      "familyId": "ALJ-AKAR",
+      "variantId": 3,
+      "level": 1,
+      "skill": "aljabar",
+      "active": true
+    },
+    {
+      "id": "G-034",
+      "topicId": "aljabar",
+      "difficulty": "Mudah",
+      "question": "Akar-akar persamaan x² + 8x + 15 = 0 adalah ...",
+      "options": [
+        "-5 dan -4",
+        "5 dan 3",
+        "-4 dan -3",
+        "-5 dan -3"
+      ],
+      "answer": 3,
+      "solution": "Faktorkan: x² + 8x + 15 = (x + 5)(x + 3).\nAkar-akarnya -5 dan -3.",
+      "familyId": "ALJ-AKAR",
+      "variantId": 4,
+      "level": 1,
+      "skill": "aljabar",
+      "active": true
+    },
+    {
+      "id": "G-035",
+      "topicId": "aljabar",
+      "difficulty": "Mudah",
+      "question": "Akar-akar persamaan x² − 6x + 8 = 0 adalah ...",
+      "options": [
+        "3 dan 4",
+        "2 dan 4",
+        "-2 dan -4",
+        "2 dan 3"
+      ],
+      "answer": 1,
+      "solution": "Faktorkan: x² − 6x + 8 = (x − 2)(x − 4).\nAkar-akarnya 2 dan 4.",
+      "familyId": "ALJ-AKAR",
+      "variantId": 5,
+      "level": 1,
+      "skill": "aljabar",
+      "active": true
+    },
+    {
+      "id": "G-036",
+      "topicId": "aljabar",
+      "difficulty": "Tantangan",
+      "question": "Diskriminan dari persamaan 4x² − 5x + 1 = 0 adalah ...",
+      "options": [
+        "9",
+        "10",
+        "8",
+        "13"
+      ],
+      "answer": 0,
+      "solution": "D = b² − 4ac\nD = (-5)² − 4(4)(1) = 25 − 16 = 9.",
+      "familyId": "ALJ-DISKRIMINAN",
+      "variantId": 1,
+      "level": 3,
+      "skill": "aljabar",
+      "active": true
+    },
+    {
+      "id": "G-037",
+      "topicId": "aljabar",
+      "difficulty": "Tantangan",
+      "question": "Diskriminan dari persamaan 3x² − 7x + 2 = 0 adalah ...",
+      "options": [
+        "29",
+        "24",
+        "25",
+        "26"
+      ],
+      "answer": 2,
+      "solution": "D = b² − 4ac\nD = (-7)² − 4(3)(2) = 49 − 24 = 25.",
+      "familyId": "ALJ-DISKRIMINAN",
+      "variantId": 2,
+      "level": 3,
+      "skill": "aljabar",
+      "active": true
+    },
+    {
+      "id": "G-038",
+      "topicId": "aljabar",
+      "difficulty": "Tantangan",
+      "question": "Diskriminan dari persamaan 2x² + 3x + 1 = 0 adalah ...",
+      "options": [
+        "2",
+        "0",
+        "1",
+        "5"
+      ],
+      "answer": 2,
+      "solution": "D = b² − 4ac\nD = (3)² − 4(2)(1) = 9 − 8 = 1.",
+      "familyId": "ALJ-DISKRIMINAN",
+      "variantId": 3,
+      "level": 3,
+      "skill": "aljabar",
+      "active": true
+    },
+    {
+      "id": "G-039",
+      "topicId": "aljabar",
+      "difficulty": "Tantangan",
+      "question": "Diskriminan dari persamaan 3x² + 5x + 4 = 0 adalah ...",
+      "options": [
+        "-22",
+        "-19",
+        "-24",
+        "-23"
+      ],
+      "answer": 3,
+      "solution": "D = b² − 4ac\nD = (5)² − 4(3)(4) = 25 − 48 = -23.",
+      "familyId": "ALJ-DISKRIMINAN",
+      "variantId": 4,
+      "level": 3,
+      "skill": "aljabar",
+      "active": true
+    },
+    {
+      "id": "G-040",
+      "topicId": "aljabar",
+      "difficulty": "Tantangan",
+      "question": "Diskriminan dari persamaan 2x² − 3x + 3 = 0 adalah ...",
+      "options": [
+        "-16",
+        "-11",
+        "-15",
+        "-14"
+      ],
+      "answer": 2,
+      "solution": "D = b² − 4ac\nD = (-3)² − 4(2)(3) = 9 − 24 = -15.",
+      "familyId": "ALJ-DISKRIMINAN",
+      "variantId": 5,
+      "level": 3,
+      "skill": "aljabar",
+      "active": true
+    },
+    {
+      "id": "G-041",
+      "topicId": "aljabar",
+      "difficulty": "Tantangan",
+      "question": "Titik puncak grafik y = −x² − 4x − 6 adalah ...",
+      "options": [
+        "(2, -2)",
+        "(-2, -2)",
+        "(-2, 2)",
+        "(-1, -2)"
+      ],
+      "answer": 1,
+      "solution": "x = −b/(2a) = -2.\nSubstitusi x = -2: y = -2.\nTitik puncaknya (-2, -2).",
+      "familyId": "ALJ-PUNCAK",
+      "variantId": 1,
+      "level": 3,
+      "skill": "aljabar",
+      "active": true
+    },
+    {
+      "id": "G-042",
+      "topicId": "aljabar",
+      "difficulty": "Tantangan",
+      "question": "Titik puncak grafik y = x² + 4x + 6 adalah ...",
+      "options": [
+        "(-2, -2)",
+        "(-2, 2)",
+        "(-1, 2)",
+        "(2, 2)"
+      ],
+      "answer": 1,
+      "solution": "x = −b/(2a) = -2.\nSubstitusi x = -2: y = 2.\nTitik puncaknya (-2, 2).",
+      "familyId": "ALJ-PUNCAK",
+      "variantId": 2,
+      "level": 3,
+      "skill": "aljabar",
+      "active": true
+    },
+    {
+      "id": "G-043",
+      "topicId": "aljabar",
+      "difficulty": "Tantangan",
+      "question": "Titik puncak grafik y = x² + 6x + 8 adalah ...",
+      "options": [
+        "(-3, -1)",
+        "(-2, -1)",
+        "(-3, 1)",
+        "(3, -1)"
+      ],
+      "answer": 0,
+      "solution": "x = −b/(2a) = -3.\nSubstitusi x = -3: y = -1.\nTitik puncaknya (-3, -1).",
+      "familyId": "ALJ-PUNCAK",
+      "variantId": 3,
+      "level": 3,
+      "skill": "aljabar",
+      "active": true
+    },
+    {
+      "id": "G-045",
+      "topicId": "aljabar",
+      "difficulty": "Tantangan",
+      "question": "Titik puncak grafik y = x² + 2x + 4 adalah ...",
+      "options": [
+        "(-1, 3)",
+        "(-1, -3)",
+        "(1, 3)",
+        "(0, 3)"
+      ],
+      "answer": 0,
+      "solution": "x = −b/(2a) = -1.\nSubstitusi x = -1: y = 3.\nTitik puncaknya (-1, 3).",
+      "familyId": "ALJ-PUNCAK",
+      "variantId": 5,
+      "level": 3,
+      "skill": "aljabar",
+      "active": true
+    },
+    {
+      "id": "G-046",
+      "topicId": "aljabar",
+      "difficulty": "Sedang",
+      "question": "Jumlah dan hasil kali akar-akar 3x² + 15x + 18 = 0 adalah ...",
+      "options": [
+        "-4 dan 6",
+        "-5 dan 7",
+        "-6 dan 6",
+        "-5 dan 6"
+      ],
+      "answer": 3,
+      "solution": "Bagi dengan 3: x² + 5x + 6 = 0.\nJumlah akar = -5, hasil kali = 6.",
+      "familyId": "ALJ-JUMLAH",
+      "variantId": 1,
+      "level": 2,
+      "skill": "aljabar",
+      "active": true
+    },
+    {
+      "id": "G-047",
+      "topicId": "aljabar",
+      "difficulty": "Sedang",
+      "question": "Jumlah dan hasil kali akar-akar 3x² + 12x + 9 = 0 adalah ...",
+      "options": [
+        "-3 dan 3",
+        "-4 dan 4",
+        "-5 dan 3",
+        "-4 dan 3"
+      ],
+      "answer": 3,
+      "solution": "Bagi dengan 3: x² + 4x + 3 = 0.\nJumlah akar = -4, hasil kali = 3.",
+      "familyId": "ALJ-JUMLAH",
+      "variantId": 2,
+      "level": 2,
+      "skill": "aljabar",
+      "active": true
+    },
+    {
+      "id": "G-048",
+      "topicId": "aljabar",
+      "difficulty": "Sedang",
+      "question": "Jumlah dan hasil kali akar-akar 3x² − 3x − 18 = 0 adalah ...",
+      "options": [
+        "1 dan -6",
+        "2 dan -6",
+        "0 dan -6",
+        "1 dan -5"
+      ],
+      "answer": 0,
+      "solution": "Bagi dengan 3: x² − 1x − 6 = 0.\nJumlah akar = 1, hasil kali = -6.",
+      "familyId": "ALJ-JUMLAH",
+      "variantId": 3,
+      "level": 2,
+      "skill": "aljabar",
+      "active": true
+    },
+    {
+      "id": "G-049",
+      "topicId": "aljabar",
+      "difficulty": "Sedang",
+      "question": "Jumlah dan hasil kali akar-akar 2x² − 18 = 0 adalah ...",
+      "options": [
+        "0 dan -8",
+        "1 dan -9",
+        "0 dan -9",
+        "-1 dan -9"
+      ],
+      "answer": 2,
+      "solution": "Bagi dengan 2: x² + 0x − 9 = 0.\nJumlah akar = 0, hasil kali = -9.",
+      "familyId": "ALJ-JUMLAH",
+      "variantId": 4,
+      "level": 2,
+      "skill": "aljabar",
+      "active": true
+    },
+    {
+      "id": "G-050",
+      "topicId": "aljabar",
+      "difficulty": "Sedang",
+      "question": "Jumlah dan hasil kali akar-akar 2x² + 2x − 24 = 0 adalah ...",
+      "options": [
+        "-1 dan -12",
+        "-2 dan -12",
+        "0 dan -12",
+        "-1 dan -11"
+      ],
+      "answer": 0,
+      "solution": "Bagi dengan 2: x² + 1x − 12 = 0.\nJumlah akar = -1, hasil kali = -12.",
+      "familyId": "ALJ-JUMLAH",
+      "variantId": 5,
+      "level": 2,
+      "skill": "aljabar",
+      "active": true
+    },
+    {
+      "id": "G-051",
+      "topicId": "aljabar",
+      "difficulty": "Mudah",
+      "question": "Pemfaktoran dari x² − 16 adalah ...",
+      "options": [
+        "(x − 16)(x + 1)",
+        "(x − 4)(x + 4)",
+        "(x − 4)(x − 4)",
+        "(x + 4)(x + 4)"
+      ],
+      "answer": 1,
+      "solution": "Gunakan selisih kuadrat: x² − 16 = x² − 4² = (x − 4)(x + 4).",
+      "familyId": "ALJ-SELISIH",
+      "variantId": 1,
+      "level": 1,
+      "skill": "aljabar",
+      "active": true
+    },
+    {
+      "id": "G-052",
+      "topicId": "aljabar",
+      "difficulty": "Mudah",
+      "question": "Pemfaktoran dari x² − 36 adalah ...",
+      "options": [
+        "(x − 36)(x + 1)",
+        "(x + 6)(x + 6)",
+        "(x − 6)(x + 6)",
+        "(x − 6)(x − 6)"
+      ],
+      "answer": 2,
+      "solution": "Gunakan selisih kuadrat: x² − 36 = x² − 6² = (x − 6)(x + 6).",
+      "familyId": "ALJ-SELISIH",
+      "variantId": 2,
+      "level": 1,
+      "skill": "aljabar",
+      "active": true
+    },
+    {
+      "id": "G-054",
+      "topicId": "aljabar",
+      "difficulty": "Mudah",
+      "question": "Pemfaktoran dari x² − 49 adalah ...",
+      "options": [
+        "(x − 49)(x + 1)",
+        "(x + 7)(x + 7)",
+        "(x − 7)(x + 7)",
+        "(x − 7)(x − 7)"
+      ],
+      "answer": 2,
+      "solution": "Gunakan selisih kuadrat: x² − 49 = x² − 7² = (x − 7)(x + 7).",
+      "familyId": "ALJ-SELISIH",
+      "variantId": 4,
+      "level": 1,
+      "skill": "aljabar",
+      "active": true
+    },
+    {
+      "id": "G-056",
+      "topicId": "aljabar",
+      "difficulty": "Sedang",
+      "question": "Penyelesaian dari (x + 4)² = 4 adalah ...",
+      "options": [
+        "2 dan 6",
+        "-2 dan -2",
+        "-6 dan -6",
+        "-2 dan -6"
+      ],
+      "answer": 3,
+      "solution": "Ambil akar kedua ruas: x + 4 = ±2.\nDiperoleh x = -2 atau x = -6.",
+      "familyId": "ALJ-KUADRAT",
+      "variantId": 1,
+      "level": 2,
+      "skill": "aljabar",
+      "active": true
+    },
+    {
+      "id": "G-057",
+      "topicId": "aljabar",
+      "difficulty": "Sedang",
+      "question": "Penyelesaian dari (x − 2)² = 9 adalah ...",
+      "options": [
+        "-1 dan -1",
+        "-5 dan 1",
+        "5 dan -1",
+        "5 dan 5"
+      ],
+      "answer": 2,
+      "solution": "Ambil akar kedua ruas: x − 2 = ±3.\nDiperoleh x = 5 atau x = -1.",
+      "familyId": "ALJ-KUADRAT",
+      "variantId": 2,
+      "level": 2,
+      "skill": "aljabar",
+      "active": true
+    },
+    {
+      "id": "G-058",
+      "topicId": "aljabar",
+      "difficulty": "Sedang",
+      "question": "Penyelesaian dari (x − 3)² = 9 adalah ...",
+      "options": [
+        "-6 dan 0",
+        "6 dan 0",
+        "0 dan 0",
+        "6 dan 6"
+      ],
+      "answer": 1,
+      "solution": "Ambil akar kedua ruas: x − 3 = ±3.\nDiperoleh x = 6 atau x = 0.",
+      "familyId": "ALJ-KUADRAT",
+      "variantId": 3,
+      "level": 2,
+      "skill": "aljabar",
+      "active": true
+    },
+    {
+      "id": "G-059",
+      "topicId": "aljabar",
+      "difficulty": "Sedang",
+      "question": "Penyelesaian dari (x − 3)² = 4 adalah ...",
+      "options": [
+        "-5 dan -1",
+        "5 dan 5",
+        "1 dan 1",
+        "5 dan 1"
+      ],
+      "answer": 3,
+      "solution": "Ambil akar kedua ruas: x − 3 = ±2.\nDiperoleh x = 5 atau x = 1.",
+      "familyId": "ALJ-KUADRAT",
+      "variantId": 4,
+      "level": 2,
+      "skill": "aljabar",
+      "active": true
+    },
+    {
+      "id": "G-060",
+      "topicId": "aljabar",
+      "difficulty": "Sedang",
+      "question": "Penyelesaian dari (x − 3)² = 25 adalah ...",
+      "options": [
+        "-2 dan -2",
+        "8 dan -2",
+        "-8 dan 2",
+        "8 dan 8"
+      ],
+      "answer": 1,
+      "solution": "Ambil akar kedua ruas: x − 3 = ±5.\nDiperoleh x = 8 atau x = -2.",
+      "familyId": "ALJ-KUADRAT",
+      "variantId": 5,
+      "level": 2,
+      "skill": "aljabar",
+      "active": true
+    },
+    {
+      "id": "G-061",
+      "topicId": "fungsi",
+      "difficulty": "Mudah",
+      "question": "Gradien garis yang melalui titik (2, -4) dan (4, -2) adalah ...",
+      "options": [
+        "1",
+        "0",
+        "2",
+        "-1"
+      ],
+      "answer": 0,
+      "solution": "m = (y₂ − y₁)/(x₂ − x₁) = (-2 − -4)/(4 − 2) = 2/2 = 1.",
+      "familyId": "FUN-GRADIEN",
+      "variantId": 1,
+      "level": 1,
+      "skill": "fungsi",
+      "active": true
+    },
+    {
+      "id": "G-062",
+      "topicId": "fungsi",
+      "difficulty": "Mudah",
+      "question": "Gradien garis yang melalui titik (0, 5) dan (5, -5) adalah ...",
+      "options": [
+        "-2",
+        "-3",
+        "-1",
+        "2"
+      ],
+      "answer": 0,
+      "solution": "m = (y₂ − y₁)/(x₂ − x₁) = (-5 − 5)/(5 − 0) = -10/5 = -2.",
+      "familyId": "FUN-GRADIEN",
+      "variantId": 2,
+      "level": 1,
+      "skill": "fungsi",
+      "active": true
+    },
+    {
+      "id": "G-063",
+      "topicId": "fungsi",
+      "difficulty": "Mudah",
+      "question": "Gradien garis yang melalui titik (0, 3) dan (5, -2) adalah ...",
+      "options": [
+        "-1",
+        "1",
+        "-2",
+        "0"
+      ],
+      "answer": 0,
+      "solution": "m = (y₂ − y₁)/(x₂ − x₁) = (-2 − 3)/(5 − 0) = -5/5 = -1.",
+      "familyId": "FUN-GRADIEN",
+      "variantId": 3,
+      "level": 1,
+      "skill": "fungsi",
+      "active": true
+    },
+    {
+      "id": "G-064",
+      "topicId": "fungsi",
+      "difficulty": "Mudah",
+      "question": "Gradien garis yang melalui titik (-2, 3) dan (5, 10) adalah ...",
+      "options": [
+        "2",
+        "0",
+        "1",
+        "-1"
+      ],
+      "answer": 2,
+      "solution": "m = (y₂ − y₁)/(x₂ − x₁) = (10 − 3)/(5 − -2) = 7/7 = 1.",
+      "familyId": "FUN-GRADIEN",
+      "variantId": 4,
+      "level": 1,
+      "skill": "fungsi",
+      "active": true
+    },
+    {
+      "id": "G-065",
+      "topicId": "fungsi",
+      "difficulty": "Mudah",
+      "question": "Gradien garis yang melalui titik (0, -6) dan (4, 6) adalah ...",
+      "options": [
+        "3",
+        "-3",
+        "4",
+        "2"
+      ],
+      "answer": 0,
+      "solution": "m = (y₂ − y₁)/(x₂ − x₁) = (6 − -6)/(4 − 0) = 12/4 = 3.",
+      "familyId": "FUN-GRADIEN",
+      "variantId": 5,
+      "level": 1,
+      "skill": "fungsi",
+      "active": true
+    },
+    {
+      "id": "G-066",
+      "topicId": "fungsi",
+      "difficulty": "Sedang",
+      "question": "Persamaan garis dengan gradien -2 dan melalui titik (1, -3) adalah ...",
+      "options": [
+        "y = -2x − 2",
+        "y = -2x − 1",
+        "y = 2x − 1",
+        "y = -2x + 0"
+      ],
+      "answer": 1,
+      "solution": "Gunakan y = mx + c.\n-3 = -2(1) + c, sehingga c = -1.\nPersamaannya y = -2x − 1.",
+      "familyId": "FUN-GARIS",
+      "variantId": 1,
+      "level": 2,
+      "skill": "fungsi",
+      "active": true
+    },
+    {
+      "id": "G-067",
+      "topicId": "fungsi",
+      "difficulty": "Sedang",
+      "question": "Persamaan garis dengan gradien -3 dan melalui titik (1, 6) adalah ...",
+      "options": [
+        "y = -3x + 9",
+        "y = 3x + 9",
+        "y = -3x + 10",
+        "y = -3x + 8"
+      ],
+      "answer": 0,
+      "solution": "Gunakan y = mx + c.\n6 = -3(1) + c, sehingga c = 9.\nPersamaannya y = -3x + 9.",
+      "familyId": "FUN-GARIS",
+      "variantId": 2,
+      "level": 2,
+      "skill": "fungsi",
+      "active": true
+    },
+    {
+      "id": "G-068",
+      "topicId": "fungsi",
+      "difficulty": "Sedang",
+      "question": "Persamaan garis dengan gradien -3 dan melalui titik (1, 2) adalah ...",
+      "options": [
+        "y = 3x + 5",
+        "y = -3x + 5",
+        "y = -3x + 6",
+        "y = -3x + 4"
+      ],
+      "answer": 1,
+      "solution": "Gunakan y = mx + c.\n2 = -3(1) + c, sehingga c = 5.\nPersamaannya y = -3x + 5.",
+      "familyId": "FUN-GARIS",
+      "variantId": 3,
+      "level": 2,
+      "skill": "fungsi",
+      "active": true
+    },
+    {
+      "id": "G-069",
+      "topicId": "fungsi",
+      "difficulty": "Sedang",
+      "question": "Persamaan garis dengan gradien -2 dan melalui titik (2, -2) adalah ...",
+      "options": [
+        "y = -2x + 2",
+        "y = -2x + 3",
+        "y = -2x + 1",
+        "y = 2x + 2"
+      ],
+      "answer": 0,
+      "solution": "Gunakan y = mx + c.\n-2 = -2(2) + c, sehingga c = 2.\nPersamaannya y = -2x + 2.",
+      "familyId": "FUN-GARIS",
+      "variantId": 4,
+      "level": 2,
+      "skill": "fungsi",
+      "active": true
+    },
+    {
+      "id": "G-070",
+      "topicId": "fungsi",
+      "difficulty": "Sedang",
+      "question": "Persamaan garis dengan gradien 2 dan melalui titik (0, -5) adalah ...",
+      "options": [
+        "y = 2x − 4",
+        "y = 2x − 6",
+        "y = 2x − 5",
+        "y = -2x − 5"
+      ],
+      "answer": 2,
+      "solution": "Gunakan y = mx + c.\n-5 = 2(0) + c, sehingga c = -5.\nPersamaannya y = 2x − 5.",
+      "familyId": "FUN-GARIS",
+      "variantId": 5,
+      "level": 2,
+      "skill": "fungsi",
+      "active": true
+    },
+    {
+      "id": "G-071",
+      "topicId": "fungsi",
+      "difficulty": "Mudah",
+      "question": "Jika f(x) = 5x − 4, nilai f(2) adalah ...",
+      "options": [
+        "7",
+        "5",
+        "6",
+        "14"
+      ],
+      "answer": 2,
+      "solution": "f(2) = 5(2) − 4 = 10 − 4 = 6.",
+      "familyId": "FUN-NILAI",
+      "variantId": 1,
+      "level": 1,
+      "skill": "fungsi",
+      "active": true
+    },
+    {
+      "id": "G-072",
+      "topicId": "fungsi",
+      "difficulty": "Mudah",
+      "question": "Jika f(x) = 5x + 4, nilai f(5) adalah ...",
+      "options": [
+        "30",
+        "29",
+        "28",
+        "21"
+      ],
+      "answer": 1,
+      "solution": "f(5) = 5(5) + 4 = 25 + 4 = 29.",
+      "familyId": "FUN-NILAI",
+      "variantId": 2,
+      "level": 1,
+      "skill": "fungsi",
+      "active": true
+    },
+    {
+      "id": "G-073",
+      "topicId": "fungsi",
+      "difficulty": "Mudah",
+      "question": "Jika f(x) = 2x + 2, nilai f(5) adalah ...",
+      "options": [
+        "13",
+        "11",
+        "8",
+        "12"
+      ],
+      "answer": 3,
+      "solution": "f(5) = 2(5) + 2 = 10 + 2 = 12.",
+      "familyId": "FUN-NILAI",
+      "variantId": 3,
+      "level": 1,
+      "skill": "fungsi",
+      "active": true
+    },
+    {
+      "id": "G-074",
+      "topicId": "fungsi",
+      "difficulty": "Mudah",
+      "question": "Jika f(x) = 4x + 2, nilai f(2) adalah ...",
+      "options": [
+        "6",
+        "10",
+        "11",
+        "9"
+      ],
+      "answer": 1,
+      "solution": "f(2) = 4(2) + 2 = 8 + 2 = 10.",
+      "familyId": "FUN-NILAI",
+      "variantId": 4,
+      "level": 1,
+      "skill": "fungsi",
+      "active": true
+    },
+    {
+      "id": "G-075",
+      "topicId": "fungsi",
+      "difficulty": "Mudah",
+      "question": "Jika f(x) = 5x + 0, nilai f(5) adalah ...",
+      "options": [
+        "5",
+        "25",
+        "24",
+        "26"
+      ],
+      "answer": 1,
+      "solution": "f(5) = 5(5) + 0 = 25 + 0 = 25.",
+      "familyId": "FUN-NILAI",
+      "variantId": 5,
+      "level": 1,
+      "skill": "fungsi",
+      "active": true
+    },
+    {
+      "id": "G-076",
+      "topicId": "fungsi",
+      "difficulty": "Tantangan",
+      "question": "Fungsi f(x) = ax + b memenuhi f(1) = 6 dan f(3) = 14. Rumus fungsi tersebut adalah ...",
+      "options": [
+        "f(x) = 4x + 3",
+        "f(x) = 4x + 2",
+        "f(x) = 5x + 2",
+        "f(x) = 4x − 2"
+      ],
+      "answer": 1,
+      "solution": "4 + b = 6 dan 12 + b = 14.\nKurangkan: 2a = 8, maka a = 4.\nSubstitusi: b = 2.\nJadi f(x) = 4x + 2.",
+      "familyId": "FUN-RUMUS",
+      "variantId": 1,
+      "level": 3,
+      "skill": "fungsi",
+      "active": true
+    },
+    {
+      "id": "G-077",
+      "topicId": "fungsi",
+      "difficulty": "Tantangan",
+      "question": "Fungsi f(x) = ax + b memenuhi f(1) = 5 dan f(3) = 13. Rumus fungsi tersebut adalah ...",
+      "options": [
+        "f(x) = 4x − 1",
+        "f(x) = 4x + 1",
+        "f(x) = 5x + 1",
+        "f(x) = 4x + 2"
+      ],
+      "answer": 1,
+      "solution": "4 + b = 5 dan 12 + b = 13.\nKurangkan: 2a = 8, maka a = 4.\nSubstitusi: b = 1.\nJadi f(x) = 4x + 1.",
+      "familyId": "FUN-RUMUS",
+      "variantId": 2,
+      "level": 3,
+      "skill": "fungsi",
+      "active": true
+    },
+    {
+      "id": "G-078",
+      "topicId": "fungsi",
+      "difficulty": "Tantangan",
+      "question": "Fungsi f(x) = ax + b memenuhi f(1) = -2 dan f(3) = 4. Rumus fungsi tersebut adalah ...",
+      "options": [
+        "f(x) = 4x − 5",
+        "f(x) = 3x + 5",
+        "f(x) = 3x − 5",
+        "f(x) = 3x − 4"
+      ],
+      "answer": 2,
+      "solution": "3 + b = -2 dan 9 + b = 4.\nKurangkan: 2a = 6, maka a = 3.\nSubstitusi: b = -5.\nJadi f(x) = 3x − 5.",
+      "familyId": "FUN-RUMUS",
+      "variantId": 3,
+      "level": 3,
+      "skill": "fungsi",
+      "active": true
+    },
+    {
+      "id": "G-079",
+      "topicId": "fungsi",
+      "difficulty": "Tantangan",
+      "question": "Fungsi f(x) = ax + b memenuhi f(1) = 1 dan f(3) = 7. Rumus fungsi tersebut adalah ...",
+      "options": [
+        "f(x) = 3x − 1",
+        "f(x) = 3x − 2",
+        "f(x) = 4x − 2",
+        "f(x) = 3x + 2"
+      ],
+      "answer": 1,
+      "solution": "3 + b = 1 dan 9 + b = 7.\nKurangkan: 2a = 6, maka a = 3.\nSubstitusi: b = -2.\nJadi f(x) = 3x − 2.",
+      "familyId": "FUN-RUMUS",
+      "variantId": 4,
+      "level": 3,
+      "skill": "fungsi",
+      "active": true
+    },
+    {
+      "id": "G-080",
+      "topicId": "fungsi",
+      "difficulty": "Tantangan",
+      "question": "Fungsi f(x) = ax + b memenuhi f(1) = 8 dan f(3) = 14. Rumus fungsi tersebut adalah ...",
+      "options": [
+        "f(x) = 4x + 5",
+        "f(x) = 3x + 5",
+        "f(x) = 3x − 5",
+        "f(x) = 3x + 6"
+      ],
+      "answer": 1,
+      "solution": "3 + b = 8 dan 9 + b = 14.\nKurangkan: 2a = 6, maka a = 3.\nSubstitusi: b = 5.\nJadi f(x) = 3x + 5.",
+      "familyId": "FUN-RUMUS",
+      "variantId": 5,
+      "level": 3,
+      "skill": "fungsi",
+      "active": true
+    },
+    {
+      "id": "G-081",
+      "topicId": "fungsi",
+      "difficulty": "Sedang",
+      "question": "Garis yang sejajar dengan y = -1x + -4 dan melalui titik (3, -4) adalah ...",
+      "options": [
+        "y = -1x − 3",
+        "y = -1x − 1",
+        "y = -1x + 1",
+        "y = 1x − 1"
+      ],
+      "answer": 1,
+      "solution": "Garis sejajar memiliki gradien -1.\n-4 = -1(3) + c, sehingga c = -1.\nPersamaannya y = -1x − 1.",
+      "familyId": "FUN-SEJajar",
+      "variantId": 1,
+      "level": 2,
+      "skill": "fungsi",
+      "active": true
+    },
+    {
+      "id": "G-082",
+      "topicId": "fungsi",
+      "difficulty": "Sedang",
+      "question": "Garis yang sejajar dengan y = 2x + 1 dan melalui titik (2, 5) adalah ...",
+      "options": [
+        "y = 2x + 1",
+        "y = -2x + 1",
+        "y = 2x + 3",
+        "y = 2x − 1"
+      ],
+      "answer": 0,
+      "solution": "Garis sejajar memiliki gradien 2.\n5 = 2(2) + c, sehingga c = 1.\nPersamaannya y = 2x + 1.",
+      "familyId": "FUN-SEJajar",
+      "variantId": 2,
+      "level": 2,
+      "skill": "fungsi",
+      "active": true
+    },
+    {
+      "id": "G-083",
+      "topicId": "fungsi",
+      "difficulty": "Sedang",
+      "question": "Garis yang sejajar dengan y = -2x + -3 dan melalui titik (2, 3) adalah ...",
+      "options": [
+        "y = -2x + 5",
+        "y = 2x + 7",
+        "y = -2x + 7",
+        "y = -2x + 9"
+      ],
+      "answer": 2,
+      "solution": "Garis sejajar memiliki gradien -2.\n3 = -2(2) + c, sehingga c = 7.\nPersamaannya y = -2x + 7.",
+      "familyId": "FUN-SEJajar",
+      "variantId": 3,
+      "level": 2,
+      "skill": "fungsi",
+      "active": true
+    },
+    {
+      "id": "G-084",
+      "topicId": "fungsi",
+      "difficulty": "Sedang",
+      "question": "Garis yang sejajar dengan y = 2x + 4 dan melalui titik (2, 3) adalah ...",
+      "options": [
+        "y = -2x − 1",
+        "y = 2x + 1",
+        "y = 2x − 1",
+        "y = 2x − 3"
+      ],
+      "answer": 2,
+      "solution": "Garis sejajar memiliki gradien 2.\n3 = 2(2) + c, sehingga c = -1.\nPersamaannya y = 2x − 1.",
+      "familyId": "FUN-SEJajar",
+      "variantId": 4,
+      "level": 2,
+      "skill": "fungsi",
+      "active": true
+    },
+    {
+      "id": "G-085",
+      "topicId": "fungsi",
+      "difficulty": "Sedang",
+      "question": "Garis yang sejajar dengan y = -2x + 1 dan melalui titik (1, -2) adalah ...",
+      "options": [
+        "y = -2x − 2",
+        "y = -2x + 2",
+        "y = -2x",
+        "y = 2x + 0"
+      ],
+      "answer": 2,
+      "solution": "Garis sejajar memiliki gradien -2.\n-2 = -2(1) + c, sehingga c = 0.\nPersamaannya y = -2x.",
+      "familyId": "FUN-SEJajar",
+      "variantId": 5,
+      "level": 2,
+      "skill": "fungsi",
+      "active": true
+    },
+    {
+      "id": "G-086",
+      "topicId": "fungsi",
+      "difficulty": "Mudah",
+      "question": "Titik potong garis 2x + 2y = 14 dengan sumbu X adalah ...",
+      "options": [
+        "(7, 0)",
+        "(14, 0)",
+        "(8, 0)",
+        "(6, 0)"
+      ],
+      "answer": 0,
+      "solution": "Pada sumbu X, y = 0.\n2x = 14, sehingga x = 7.\nTitik potongnya (7, 0).",
+      "familyId": "FUN-POTONG",
+      "variantId": 1,
+      "level": 1,
+      "skill": "fungsi",
+      "active": true
+    },
+    {
+      "id": "G-087",
+      "topicId": "fungsi",
+      "difficulty": "Mudah",
+      "question": "Titik potong garis 3x + 6y = 9 dengan sumbu X adalah ...",
+      "options": [
+        "(3, 0)",
+        "(9, 0)",
+        "(4, 0)",
+        "(2, 0)"
+      ],
+      "answer": 0,
+      "solution": "Pada sumbu X, y = 0.\n3x = 9, sehingga x = 3.\nTitik potongnya (3, 0).",
+      "familyId": "FUN-POTONG",
+      "variantId": 2,
+      "level": 1,
+      "skill": "fungsi",
+      "active": true
+    },
+    {
+      "id": "G-088",
+      "topicId": "fungsi",
+      "difficulty": "Mudah",
+      "question": "Titik potong garis 2x + 5y = 6 dengan sumbu X adalah ...",
+      "options": [
+        "(4, 0)",
+        "(6, 0)",
+        "(3, 0)",
+        "(2, 0)"
+      ],
+      "answer": 2,
+      "solution": "Pada sumbu X, y = 0.\n2x = 6, sehingga x = 3.\nTitik potongnya (3, 0).",
+      "familyId": "FUN-POTONG",
+      "variantId": 3,
+      "level": 1,
+      "skill": "fungsi",
+      "active": true
+    },
+    {
+      "id": "G-089",
+      "topicId": "fungsi",
+      "difficulty": "Mudah",
+      "question": "Titik potong garis 2x + 2y = 8 dengan sumbu X adalah ...",
+      "options": [
+        "(5, 0)",
+        "(3, 0)",
+        "(4, 0)",
+        "(8, 0)"
+      ],
+      "answer": 2,
+      "solution": "Pada sumbu X, y = 0.\n2x = 8, sehingga x = 4.\nTitik potongnya (4, 0).",
+      "familyId": "FUN-POTONG",
+      "variantId": 4,
+      "level": 1,
+      "skill": "fungsi",
+      "active": true
+    },
+    {
+      "id": "G-091",
+      "topicId": "geometri",
+      "difficulty": "Mudah",
+      "question": "Segitiga siku-siku memiliki sisi tegak 3 cm dan 4 cm. Panjang sisi miringnya adalah ...",
+      "options": [
+        "5 cm",
+        "4 cm",
+        "6 cm",
+        "7 cm"
+      ],
+      "answer": 0,
+      "solution": "c² = 3² + 4² = 9 + 16 = 25.\nc = √25 = 5 cm.",
+      "familyId": "GEO-PYTHAGORAS",
+      "variantId": 1,
+      "level": 1,
+      "skill": "geometri",
+      "active": true
+    },
+    {
+      "id": "G-092",
+      "topicId": "geometri",
+      "difficulty": "Mudah",
+      "question": "Segitiga siku-siku memiliki sisi tegak 5 cm dan 12 cm. Panjang sisi miringnya adalah ...",
+      "options": [
+        "17 cm",
+        "12 cm",
+        "14 cm",
+        "13 cm"
+      ],
+      "answer": 3,
+      "solution": "c² = 5² + 12² = 25 + 144 = 169.\nc = √169 = 13 cm.",
+      "familyId": "GEO-PYTHAGORAS",
+      "variantId": 2,
+      "level": 1,
+      "skill": "geometri",
+      "active": true
+    },
+    {
+      "id": "G-093",
+      "topicId": "geometri",
+      "difficulty": "Mudah",
+      "question": "Segitiga siku-siku memiliki sisi tegak 6 cm dan 8 cm. Panjang sisi miringnya adalah ...",
+      "options": [
+        "10 cm",
+        "9 cm",
+        "14 cm",
+        "11 cm"
+      ],
+      "answer": 0,
+      "solution": "c² = 6² + 8² = 36 + 64 = 100.\nc = √100 = 10 cm.",
+      "familyId": "GEO-PYTHAGORAS",
+      "variantId": 3,
+      "level": 1,
+      "skill": "geometri",
+      "active": true
+    },
+    {
+      "id": "G-094",
+      "topicId": "geometri",
+      "difficulty": "Mudah",
+      "question": "Segitiga siku-siku memiliki sisi tegak 9 cm dan 12 cm. Panjang sisi miringnya adalah ...",
+      "options": [
+        "16 cm",
+        "15 cm",
+        "14 cm",
+        "21 cm"
+      ],
+      "answer": 1,
+      "solution": "c² = 9² + 12² = 81 + 144 = 225.\nc = √225 = 15 cm.",
+      "familyId": "GEO-PYTHAGORAS",
+      "variantId": 4,
+      "level": 1,
+      "skill": "geometri",
+      "active": true
+    },
+    {
+      "id": "G-095",
+      "topicId": "geometri",
+      "difficulty": "Mudah",
+      "question": "Segitiga siku-siku memiliki sisi tegak 8 cm dan 15 cm. Panjang sisi miringnya adalah ...",
+      "options": [
+        "23 cm",
+        "17 cm",
+        "18 cm",
+        "16 cm"
+      ],
+      "answer": 1,
+      "solution": "c² = 8² + 15² = 64 + 225 = 289.\nc = √289 = 17 cm.",
+      "familyId": "GEO-PYTHAGORAS",
+      "variantId": 5,
+      "level": 1,
+      "skill": "geometri",
+      "active": true
+    },
+    {
+      "id": "G-096",
+      "topicId": "geometri",
+      "difficulty": "Mudah",
+      "question": "Luas lingkaran dengan jari-jari 7 cm adalah ... (π = 22/7)",
+      "options": [
+        "154 cm²",
+        "308 cm²",
+        "176 cm²",
+        "77 cm²"
+      ],
+      "answer": 0,
+      "solution": "L = πr² = 22/7 × 7² = 22/7 × 49 = 154 cm².",
+      "familyId": "GEO-LINGKARAN",
+      "variantId": 1,
+      "level": 1,
+      "skill": "geometri",
+      "active": true
+    },
+    {
+      "id": "G-097",
+      "topicId": "geometri",
+      "difficulty": "Mudah",
+      "question": "Keliling lingkaran dengan jari-jari 14 cm adalah ... (π = 22/7)",
+      "options": [
+        "110 cm",
+        "88 cm",
+        "176 cm",
+        "44 cm"
+      ],
+      "answer": 1,
+      "solution": "K = 2πr = 2 × 22/7 × 14 = 88 cm.",
+      "familyId": "GEO-LINGKARAN",
+      "variantId": 2,
+      "level": 1,
+      "skill": "geometri",
+      "active": true
+    },
+    {
+      "id": "G-099",
+      "topicId": "geometri",
+      "difficulty": "Mudah",
+      "question": "Keliling lingkaran dengan jari-jari 21 cm adalah ... (π = 22/7)",
+      "options": [
+        "66 cm",
+        "264 cm",
+        "154 cm",
+        "132 cm"
+      ],
+      "answer": 3,
+      "solution": "K = 2πr = 2 × 22/7 × 21 = 132 cm.",
+      "familyId": "GEO-LINGKARAN",
+      "variantId": 4,
+      "level": 1,
+      "skill": "geometri",
+      "active": true
+    },
+    {
+      "id": "G-100",
+      "topicId": "geometri",
+      "difficulty": "Mudah",
+      "question": "Luas lingkaran dengan jari-jari 14 cm adalah ... (π = 22/7)",
+      "options": [
+        "616 cm²",
+        "638 cm²",
+        "308 cm²",
+        "1232 cm²"
+      ],
+      "answer": 0,
+      "solution": "L = πr² = 22/7 × 14² = 22/7 × 196 = 616 cm².",
+      "familyId": "GEO-LINGKARAN",
+      "variantId": 5,
+      "level": 1,
+      "skill": "geometri",
+      "active": true
+    },
+    {
+      "id": "G-101",
+      "topicId": "geometri",
+      "difficulty": "Sedang",
+      "question": "Volume tabung dengan jari-jari 14 cm dan tinggi 15 cm adalah ... (π = 22/7)",
+      "options": [
+        "9240 cm³",
+        "9262 cm³",
+        "4620 cm³",
+        "18480 cm³"
+      ],
+      "answer": 0,
+      "solution": "V = πr²t = 22/7 × 14² × 15 = 9240 cm³.",
+      "familyId": "GEO-VOLUME",
+      "variantId": 1,
+      "level": 2,
+      "skill": "geometri",
+      "active": true
+    },
+    {
+      "id": "G-102",
+      "topicId": "geometri",
+      "difficulty": "Sedang",
+      "question": "Volume kerucut dengan jari-jari 12 cm dan tinggi 7 cm adalah ... (π = 22/7)",
+      "options": [
+        "2112 cm³",
+        "528 cm³",
+        "1056 cm³",
+        "1078 cm³"
+      ],
+      "answer": 2,
+      "solution": "V = 1/3 πr²t = 1/3 × 22/7 × 12² × 7 = 1056 cm³.",
+      "familyId": "GEO-VOLUME",
+      "variantId": 2,
+      "level": 2,
+      "skill": "geometri",
+      "active": true
+    },
+    {
+      "id": "G-103",
+      "topicId": "geometri",
+      "difficulty": "Sedang",
+      "question": "Volume bola dengan jari-jari 3 cm adalah ...",
+      "options": [
+        "36π cm³",
+        "35π cm³",
+        "37π cm³",
+        "72π cm³"
+      ],
+      "answer": 0,
+      "solution": "V = 4/3 πr³ = 4/3 × π × 3³ = 36π cm³.",
+      "familyId": "GEO-VOLUME",
+      "variantId": 3,
+      "level": 2,
+      "skill": "geometri",
+      "active": true
+    },
+    {
+      "id": "G-104",
+      "topicId": "geometri",
+      "difficulty": "Sedang",
+      "question": "Volume tabung dengan jari-jari 7 cm dan tinggi 15 cm adalah ... (π = 22/7)",
+      "options": [
+        "2332 cm³",
+        "4620 cm³",
+        "1155 cm³",
+        "2310 cm³"
+      ],
+      "answer": 3,
+      "solution": "V = πr²t = 22/7 × 7² × 15 = 2310 cm³.",
+      "familyId": "GEO-VOLUME",
+      "variantId": 4,
+      "level": 2,
+      "skill": "geometri",
+      "active": true
+    },
+    {
+      "id": "G-106",
+      "topicId": "geometri",
+      "difficulty": "Tantangan",
+      "question": "Dua segitiga sebangun memiliki sisi 5 cm, 12 cm, 13 cm dan 10 cm, 24 cm, x cm. Nilai x adalah ...",
+      "options": [
+        "34 cm",
+        "26 cm",
+        "27 cm",
+        "25 cm"
+      ],
+      "answer": 1,
+      "solution": "Perbandingan sisi = 10/5 = 2.\nMaka x = 13 × 2 = 26 cm.",
+      "familyId": "GEO-SEBANGUN",
+      "variantId": 1,
+      "level": 3,
+      "skill": "geometri",
+      "active": true
+    },
+    {
+      "id": "G-108",
+      "topicId": "geometri",
+      "difficulty": "Tantangan",
+      "question": "Dua segitiga sebangun memiliki sisi 5 cm, 12 cm, 13 cm dan 20 cm, 48 cm, x cm. Nilai x adalah ...",
+      "options": [
+        "68 cm",
+        "52 cm",
+        "51 cm",
+        "53 cm"
+      ],
+      "answer": 1,
+      "solution": "Perbandingan sisi = 20/5 = 4.\nMaka x = 13 × 4 = 52 cm.",
+      "familyId": "GEO-SEBANGUN",
+      "variantId": 3,
+      "level": 3,
+      "skill": "geometri",
+      "active": true
+    },
+    {
+      "id": "G-110",
+      "topicId": "geometri",
+      "difficulty": "Tantangan",
+      "question": "Dua segitiga sebangun memiliki sisi 6 cm, 8 cm, 10 cm dan 24 cm, 32 cm, x cm. Nilai x adalah ...",
+      "options": [
+        "40 cm",
+        "41 cm",
+        "39 cm",
+        "56 cm"
+      ],
+      "answer": 0,
+      "solution": "Perbandingan sisi = 24/6 = 4.\nMaka x = 10 × 4 = 40 cm.",
+      "familyId": "GEO-SEBANGUN",
+      "variantId": 5,
+      "level": 3,
+      "skill": "geometri",
+      "active": true
+    },
+    {
+      "id": "G-111",
+      "topicId": "geometri",
+      "difficulty": "Sedang",
+      "question": "Volume kubus 125 cm³. Luas permukaan kubus tersebut adalah ...",
+      "options": [
+        "125 cm²",
+        "75 cm²",
+        "150 cm²",
+        "25 cm²"
+      ],
+      "answer": 2,
+      "solution": "Volume = s³ = 125, maka s = 5 cm.\nLuas = 6s² = 6 × 25 = 150 cm².",
+      "familyId": "GEO-LUAS",
+      "variantId": 1,
+      "level": 2,
+      "skill": "geometri",
+      "active": true
+    },
+    {
+      "id": "G-112",
+      "topicId": "geometri",
+      "difficulty": "Sedang",
+      "question": "Luas permukaan balok berukuran 10 cm × 6 cm × 4 cm adalah ...",
+      "options": [
+        "124 cm²",
+        "240 cm²",
+        "250 cm²",
+        "248 cm²"
+      ],
+      "answer": 3,
+      "solution": "L = 2(pl + pt + lt) = 2(60 + 40 + 24) = 248 cm².",
+      "familyId": "GEO-LUAS",
+      "variantId": 2,
+      "level": 2,
+      "skill": "geometri",
+      "active": true
+    },
+    {
+      "id": "G-115",
+      "topicId": "geometri",
+      "difficulty": "Sedang",
+      "question": "Volume kubus 216 cm³. Luas permukaan kubus tersebut adalah ...",
+      "options": [
+        "432 cm²",
+        "36 cm²",
+        "216 cm²",
+        "108 cm²"
+      ],
+      "answer": 2,
+      "solution": "Volume = s³ = 216, maka s = 6 cm.\nLuas = 6s² = 6 × 36 = 216 cm².",
+      "familyId": "GEO-LUAS",
+      "variantId": 5,
+      "level": 2,
+      "skill": "geometri",
+      "active": true
+    },
+    {
+      "id": "G-116",
+      "topicId": "geometri",
+      "difficulty": "Sedang",
+      "question": "Panjang busur lingkaran dengan sudut pusat 90° dan jari-jari 7 cm adalah ... (π = 22/7)",
+      "options": [
+        "5 cm",
+        "22 cm",
+        "11 cm",
+        "7 cm"
+      ],
+      "answer": 2,
+      "solution": "Busur = 90/360 × 2 × 22/7 × 7 = 11 cm.",
+      "familyId": "GEO-BUSUR",
+      "variantId": 1,
+      "level": 2,
+      "skill": "geometri",
+      "active": true
+    },
+    {
+      "id": "G-117",
+      "topicId": "geometri",
+      "difficulty": "Sedang",
+      "question": "Panjang busur lingkaran dengan sudut pusat 180° dan jari-jari 7 cm adalah ... (π = 22/7)",
+      "options": [
+        "22 cm",
+        "11 cm",
+        "44 cm",
+        "33 cm"
+      ],
+      "answer": 0,
+      "solution": "Busur = 180/360 × 2 × 22/7 × 7 = 22 cm.",
+      "familyId": "GEO-BUSUR",
+      "variantId": 2,
+      "level": 2,
+      "skill": "geometri",
+      "active": true
+    },
+    {
+      "id": "G-118",
+      "topicId": "geometri",
+      "difficulty": "Sedang",
+      "question": "Panjang busur lingkaran dengan sudut pusat 90° dan jari-jari 14 cm adalah ... (π = 22/7)",
+      "options": [
+        "11 cm",
+        "22 cm",
+        "33 cm",
+        "44 cm"
+      ],
+      "answer": 1,
+      "solution": "Busur = 90/360 × 2 × 22/7 × 14 = 22 cm.",
+      "familyId": "GEO-BUSUR",
+      "variantId": 3,
+      "level": 2,
+      "skill": "geometri",
+      "active": true
+    },
+    {
+      "id": "G-119",
+      "topicId": "geometri",
+      "difficulty": "Sedang",
+      "question": "Panjang busur lingkaran dengan sudut pusat 180° dan jari-jari 14 cm adalah ... (π = 22/7)",
+      "options": [
+        "22 cm",
+        "88 cm",
+        "55 cm",
+        "44 cm"
+      ],
+      "answer": 3,
+      "solution": "Busur = 180/360 × 2 × 22/7 × 14 = 44 cm.",
+      "familyId": "GEO-BUSUR",
+      "variantId": 4,
+      "level": 2,
+      "skill": "geometri",
+      "active": true
+    },
+    {
+      "id": "G-120",
+      "topicId": "geometri",
+      "difficulty": "Sedang",
+      "question": "Panjang busur lingkaran dengan sudut pusat 60° dan jari-jari 21 cm adalah ... (π = 22/7)",
+      "options": [
+        "44 cm",
+        "11 cm",
+        "33 cm",
+        "22 cm"
+      ],
+      "answer": 3,
+      "solution": "Busur = 60/360 × 2 × 22/7 × 21 = 22 cm.",
+      "familyId": "GEO-BUSUR",
+      "variantId": 5,
+      "level": 2,
+      "skill": "geometri",
+      "active": true
+    },
+    {
+      "id": "G-121",
+      "topicId": "statistika",
+      "difficulty": "Mudah",
+      "question": "Rata-rata dari data 8, 11, 5, 3, 3 adalah ...",
+      "options": [
+        "7",
+        "8",
+        "5",
+        "6"
+      ],
+      "answer": 3,
+      "solution": "Jumlah data = 30.\nBanyak data = 5.\nRata-rata = 30/5 = 6.",
+      "familyId": "STA-MEAN",
+      "variantId": 1,
+      "level": 1,
+      "skill": "statistika",
+      "active": true
+    },
+    {
+      "id": "G-122",
+      "topicId": "statistika",
+      "difficulty": "Mudah",
+      "question": "Rata-rata dari data 10, 6, 8, 5, 11 adalah ...",
+      "options": [
+        "10",
+        "9",
+        "7",
+        "8"
+      ],
+      "answer": 3,
+      "solution": "Jumlah data = 40.\nBanyak data = 5.\nRata-rata = 40/5 = 8.",
+      "familyId": "STA-MEAN",
+      "variantId": 2,
+      "level": 1,
+      "skill": "statistika",
+      "active": true
+    },
+    {
+      "id": "G-123",
+      "topicId": "statistika",
+      "difficulty": "Mudah",
+      "question": "Rata-rata dari data 6, 7, 4, 9, 9 adalah ...",
+      "options": [
+        "6",
+        "8",
+        "9",
+        "7"
+      ],
+      "answer": 3,
+      "solution": "Jumlah data = 35.\nBanyak data = 5.\nRata-rata = 35/5 = 7.",
+      "familyId": "STA-MEAN",
+      "variantId": 3,
+      "level": 1,
+      "skill": "statistika",
+      "active": true
+    },
+    {
+      "id": "G-124",
+      "topicId": "statistika",
+      "difficulty": "Mudah",
+      "question": "Rata-rata dari data 8, 8, 7, 3, 4 adalah ...",
+      "options": [
+        "8",
+        "6",
+        "7",
+        "5"
+      ],
+      "answer": 1,
+      "solution": "Jumlah data = 30.\nBanyak data = 5.\nRata-rata = 30/5 = 6.",
+      "familyId": "STA-MEAN",
+      "variantId": 4,
+      "level": 1,
+      "skill": "statistika",
+      "active": true
+    },
+    {
+      "id": "G-125",
+      "topicId": "statistika",
+      "difficulty": "Mudah",
+      "question": "Rata-rata dari data 4, 6, 7, 9, 4 adalah ...",
+      "options": [
+        "6",
+        "8",
+        "7",
+        "5"
+      ],
+      "answer": 0,
+      "solution": "Jumlah data = 30.\nBanyak data = 5.\nRata-rata = 30/5 = 6.",
+      "familyId": "STA-MEAN",
+      "variantId": 5,
+      "level": 1,
+      "skill": "statistika",
+      "active": true
+    },
+    {
+      "id": "G-126",
+      "topicId": "statistika",
+      "difficulty": "Mudah",
+      "question": "Median dari data 5, 5, 9, 10, 11, 13 adalah ...",
+      "options": [
+        "10",
+        "9,5",
+        "9",
+        "10,0"
+      ],
+      "answer": 1,
+      "solution": "Data terurut: 5, 5, 9, 10, 11, 13.\nMedian = (data ke-3 + data ke-4)/2 = (9 + 10)/2 = 9,5.",
+      "familyId": "STA-MEDIAN",
+      "variantId": 1,
+      "level": 1,
+      "skill": "statistika",
+      "active": true
+    },
+    {
+      "id": "G-127",
+      "topicId": "statistika",
+      "difficulty": "Mudah",
+      "question": "Median dari data 9, 10, 11, 15, 16, 18 adalah ...",
+      "options": [
+        "13",
+        "11",
+        "13,5",
+        "15"
+      ],
+      "answer": 0,
+      "solution": "Data terurut: 9, 10, 11, 15, 16, 18.\nMedian = (data ke-3 + data ke-4)/2 = (11 + 15)/2 = 13.",
+      "familyId": "STA-MEDIAN",
+      "variantId": 2,
+      "level": 1,
+      "skill": "statistika",
+      "active": true
+    },
+    {
+      "id": "G-128",
+      "topicId": "statistika",
+      "difficulty": "Mudah",
+      "question": "Median dari data 3, 7, 9, 13, 15, 18 adalah ...",
+      "options": [
+        "11",
+        "9",
+        "13",
+        "11,5"
+      ],
+      "answer": 0,
+      "solution": "Data terurut: 3, 7, 9, 13, 15, 18.\nMedian = (data ke-3 + data ke-4)/2 = (9 + 13)/2 = 11.",
+      "familyId": "STA-MEDIAN",
+      "variantId": 3,
+      "level": 1,
+      "skill": "statistika",
+      "active": true
+    },
+    {
+      "id": "G-129",
+      "topicId": "statistika",
+      "difficulty": "Mudah",
+      "question": "Median dari data 6, 7, 7, 8, 10, 18 adalah ...",
+      "options": [
+        "7,5",
+        "7",
+        "8,0",
+        "8"
+      ],
+      "answer": 0,
+      "solution": "Data terurut: 6, 7, 7, 8, 10, 18.\nMedian = (data ke-3 + data ke-4)/2 = (7 + 8)/2 = 7,5.",
+      "familyId": "STA-MEDIAN",
+      "variantId": 4,
+      "level": 1,
+      "skill": "statistika",
+      "active": true
+    },
+    {
+      "id": "G-130",
+      "topicId": "statistika",
+      "difficulty": "Mudah",
+      "question": "Median dari data 5, 9, 12, 15, 15, 17 adalah ...",
+      "options": [
+        "14,0",
+        "12",
+        "15",
+        "13,5"
+      ],
+      "answer": 3,
+      "solution": "Data terurut: 5, 9, 12, 15, 15, 17.\nMedian = (data ke-3 + data ke-4)/2 = (12 + 15)/2 = 13,5.",
+      "familyId": "STA-MEDIAN",
+      "variantId": 5,
+      "level": 1,
+      "skill": "statistika",
+      "active": true
+    },
+    {
+      "id": "G-131",
+      "topicId": "statistika",
+      "difficulty": "Mudah",
+      "question": "Modus dari data 5, 10, 5, 7, 3, 5, 7 adalah ...",
+      "options": [
+        "5",
+        "6",
+        "4",
+        "7"
+      ],
+      "answer": 0,
+      "solution": "Nilai 5 muncul tiga kali, lebih sering daripada nilai lain.\nJadi modusnya 5.",
+      "familyId": "STA-MODUS",
+      "variantId": 1,
+      "level": 1,
+      "skill": "statistika",
+      "active": true
+    },
+    {
+      "id": "G-132",
+      "topicId": "statistika",
+      "difficulty": "Mudah",
+      "question": "Modus dari data 9, 6, 4, 10, 9, 9, 11 adalah ...",
+      "options": [
+        "10",
+        "11",
+        "9",
+        "8"
+      ],
+      "answer": 2,
+      "solution": "Nilai 9 muncul tiga kali, lebih sering daripada nilai lain.\nJadi modusnya 9.",
+      "familyId": "STA-MODUS",
+      "variantId": 2,
+      "level": 1,
+      "skill": "statistika",
+      "active": true
+    },
+    {
+      "id": "G-133",
+      "topicId": "statistika",
+      "difficulty": "Mudah",
+      "question": "Modus dari data 4, 9, 9, 7, 6, 3, 9 adalah ...",
+      "options": [
+        "8",
+        "9",
+        "10",
+        "11"
+      ],
+      "answer": 1,
+      "solution": "Nilai 9 muncul tiga kali, lebih sering daripada nilai lain.\nJadi modusnya 9.",
+      "familyId": "STA-MODUS",
+      "variantId": 3,
+      "level": 1,
+      "skill": "statistika",
+      "active": true
+    },
+    {
+      "id": "G-134",
+      "topicId": "statistika",
+      "difficulty": "Mudah",
+      "question": "Modus dari data 7, 8, 5, 6, 8, 5, 8 adalah ...",
+      "options": [
+        "7",
+        "10",
+        "9",
+        "8"
+      ],
+      "answer": 3,
+      "solution": "Nilai 8 muncul tiga kali, lebih sering daripada nilai lain.\nJadi modusnya 8.",
+      "familyId": "STA-MODUS",
+      "variantId": 4,
+      "level": 1,
+      "skill": "statistika",
+      "active": true
+    },
+    {
+      "id": "G-135",
+      "topicId": "statistika",
+      "difficulty": "Mudah",
+      "question": "Modus dari data 7, 8, 5, 4, 6, 6, 6 adalah ...",
+      "options": [
+        "5",
+        "7",
+        "8",
+        "6"
+      ],
+      "answer": 3,
+      "solution": "Nilai 6 muncul tiga kali, lebih sering daripada nilai lain.\nJadi modusnya 6.",
+      "familyId": "STA-MODUS",
+      "variantId": 5,
+      "level": 1,
+      "skill": "statistika",
+      "active": true
+    },
+    {
+      "id": "G-136",
+      "topicId": "statistika",
+      "difficulty": "Mudah",
+      "question": "Sebuah dadu dilempar satu kali. Peluang muncul angka ganjil adalah ...",
+      "options": [
+        "1/2",
+        "1/3",
+        "1/6",
+        "2/3"
+      ],
+      "answer": 0,
+      "solution": "Angka ganjil pada dadu adalah 1, 3, dan 5, sebanyak 3 angka.\nPeluang = 3/6 = 1/2.",
+      "familyId": "STA-PELUANG",
+      "variantId": 1,
+      "level": 1,
+      "skill": "statistika",
+      "active": true
+    },
+    {
+      "id": "G-137",
+      "topicId": "statistika",
+      "difficulty": "Mudah",
+      "question": "Sebuah kantong berisi 5 bola merah, 2 bola biru, dan 3 bola hijau. Peluang terambil bola merah adalah ...",
+      "options": [
+        "3/10",
+        "6/10",
+        "2/10",
+        "5/10"
+      ],
+      "answer": 3,
+      "solution": "Jumlah bola = 10. Bola merah = 5.\nPeluang = 5/10.",
+      "familyId": "STA-PELUANG",
+      "variantId": 2,
+      "level": 1,
+      "skill": "statistika",
+      "active": true
+    },
+    {
+      "id": "G-141",
+      "topicId": "statistika",
+      "difficulty": "Tantangan",
+      "question": "Rata-rata 5 bilangan adalah 10. Setelah satu bilangan dihapus, rata-rata 4 bilangan yang tersisa adalah 11. Bilangan yang dihapus adalah ...",
+      "options": [
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "answer": 1,
+      "solution": "Jumlah 5 bilangan = 5 × 10 = 50.\nJumlah 4 bilangan = 4 × 11 = 44.\nBilangan yang dihapus = 50 − 44 = 6.",
+      "familyId": "STA-HAPUS",
+      "variantId": 1,
+      "level": 3,
+      "skill": "statistika",
+      "active": true
+    },
+    {
+      "id": "G-144",
+      "topicId": "statistika",
+      "difficulty": "Tantangan",
+      "question": "Rata-rata 5 bilangan adalah 7. Setelah satu bilangan dihapus, rata-rata 4 bilangan yang tersisa adalah 8. Bilangan yang dihapus adalah ...",
+      "options": [
+        "2",
+        "4",
+        "5",
+        "3"
+      ],
+      "answer": 3,
+      "solution": "Jumlah 5 bilangan = 5 × 7 = 35.\nJumlah 4 bilangan = 4 × 8 = 32.\nBilangan yang dihapus = 35 − 32 = 3.",
+      "familyId": "STA-HAPUS",
+      "variantId": 4,
+      "level": 3,
+      "skill": "statistika",
+      "active": true
+    },
+    {
+      "id": "G-146",
+      "topicId": "statistika",
+      "difficulty": "Mudah",
+      "question": "Peluang hujan pada suatu hari adalah 0,25. Peluang tidak hujan adalah ...",
+      "options": [
+        "0,75",
+        "0,25",
+        "0,65",
+        "0,85"
+      ],
+      "answer": 0,
+      "solution": "Peluang tidak hujan = 1 − 0,25 = 0,75.",
+      "familyId": "STA-KOMPLEMEN",
+      "variantId": 1,
+      "level": 1,
+      "skill": "statistika",
+      "active": true
+    },
+    {
+      "id": "G-147",
+      "topicId": "statistika",
+      "difficulty": "Mudah",
+      "question": "Peluang hujan pada suatu hari adalah 0,40. Peluang tidak hujan adalah ...",
+      "options": [
+        "0,60",
+        "0,40",
+        "0,70",
+        "0,50"
+      ],
+      "answer": 0,
+      "solution": "Peluang tidak hujan = 1 − 0,40 = 0,60.",
+      "familyId": "STA-KOMPLEMEN",
+      "variantId": 2,
+      "level": 1,
+      "skill": "statistika",
+      "active": true
+    },
+    {
+      "id": "G-148",
+      "topicId": "statistika",
+      "difficulty": "Mudah",
+      "question": "Peluang hujan pada suatu hari adalah 0,35. Peluang tidak hujan adalah ...",
+      "options": [
+        "0,55",
+        "0,35",
+        "0,65",
+        "0,75"
+      ],
+      "answer": 2,
+      "solution": "Peluang tidak hujan = 1 − 0,35 = 0,65.",
+      "familyId": "STA-KOMPLEMEN",
+      "variantId": 3,
+      "level": 1,
+      "skill": "statistika",
+      "active": true
+    },
+    {
+      "id": "G-149",
+      "topicId": "statistika",
+      "difficulty": "Mudah",
+      "question": "Peluang hujan pada suatu hari adalah 0,45. Peluang tidak hujan adalah ...",
+      "options": [
+        "0,65",
+        "0,55",
+        "0,45",
+        "0,75"
+      ],
+      "answer": 1,
+      "solution": "Peluang tidak hujan = 1 − 0,45 = 0,55.",
+      "familyId": "STA-KOMPLEMEN",
+      "variantId": 4,
+      "level": 1,
+      "skill": "statistika",
+      "active": true
+    },
+    {
+      "id": "G-151",
+      "topicId": "perbandingan",
+      "difficulty": "Mudah",
+      "question": "Perbandingan dua bilangan adalah 3 : 4. Jika jumlah keduanya 56, bilangan yang lebih besar adalah ...",
+      "options": [
+        "24",
+        "33",
+        "31",
+        "32"
+      ],
+      "answer": 3,
+      "solution": "Jumlah bagian = 7.\nBilangan terbesar = 4/7 × 56 = 32.",
+      "familyId": "PER-RASIO",
+      "variantId": 1,
+      "level": 1,
+      "skill": "perbandingan",
+      "active": true
+    },
+    {
+      "id": "G-152",
+      "topicId": "perbandingan",
+      "difficulty": "Mudah",
+      "question": "Perbandingan dua bilangan adalah 2 : 5. Jika jumlah keduanya 28, bilangan yang lebih besar adalah ...",
+      "options": [
+        "21",
+        "19",
+        "8",
+        "20"
+      ],
+      "answer": 3,
+      "solution": "Jumlah bagian = 7.\nBilangan terbesar = 5/7 × 28 = 20.",
+      "familyId": "PER-RASIO",
+      "variantId": 2,
+      "level": 1,
+      "skill": "perbandingan",
+      "active": true
+    },
+    {
+      "id": "G-153",
+      "topicId": "perbandingan",
+      "difficulty": "Mudah",
+      "question": "Perbandingan dua bilangan adalah 4 : 5. Jika jumlah keduanya 54, bilangan yang lebih besar adalah ...",
+      "options": [
+        "29",
+        "24",
+        "30",
+        "31"
+      ],
+      "answer": 2,
+      "solution": "Jumlah bagian = 9.\nBilangan terbesar = 5/9 × 54 = 30.",
+      "familyId": "PER-RASIO",
+      "variantId": 3,
+      "level": 1,
+      "skill": "perbandingan",
+      "active": true
+    },
+    {
+      "id": "G-154",
+      "topicId": "perbandingan",
+      "difficulty": "Mudah",
+      "question": "Perbandingan dua bilangan adalah 3 : 5. Jika jumlah keduanya 64, bilangan yang lebih besar adalah ...",
+      "options": [
+        "24",
+        "40",
+        "41",
+        "39"
+      ],
+      "answer": 1,
+      "solution": "Jumlah bagian = 8.\nBilangan terbesar = 5/8 × 64 = 40.",
+      "familyId": "PER-RASIO",
+      "variantId": 4,
+      "level": 1,
+      "skill": "perbandingan",
+      "active": true
+    },
+    {
+      "id": "G-155",
+      "topicId": "perbandingan",
+      "difficulty": "Mudah",
+      "question": "Perbandingan dua bilangan adalah 4 : 5. Jika jumlah keduanya 81, bilangan yang lebih besar adalah ...",
+      "options": [
+        "46",
+        "44",
+        "36",
+        "45"
+      ],
+      "answer": 3,
+      "solution": "Jumlah bagian = 9.\nBilangan terbesar = 5/9 × 81 = 45.",
+      "familyId": "PER-RASIO",
+      "variantId": 5,
+      "level": 1,
+      "skill": "perbandingan",
+      "active": true
+    },
+    {
+      "id": "G-156",
+      "topicId": "perbandingan",
+      "difficulty": "Mudah",
+      "question": "Skala sebuah peta 1 : 250. Jika panjang pada peta 5 cm, panjang sebenarnya adalah ...",
+      "options": [
+        "1,25 m",
+        "12,5 m",
+        "1250 m",
+        "125 m"
+      ],
+      "answer": 1,
+      "solution": "Panjang sebenarnya = 5 × 250 = 1250 cm = 12,5 m.",
+      "familyId": "PER-SKALA",
+      "variantId": 1,
+      "level": 1,
+      "skill": "perbandingan",
+      "active": true
+    },
+    {
+      "id": "G-157",
+      "topicId": "perbandingan",
+      "difficulty": "Mudah",
+      "question": "Skala sebuah peta 1 : 200. Jika panjang pada peta 3 cm, panjang sebenarnya adalah ...",
+      "options": [
+        "6 m",
+        "0,6 m",
+        "600 m",
+        "60 m"
+      ],
+      "answer": 0,
+      "solution": "Panjang sebenarnya = 3 × 200 = 600 cm = 6 m.",
+      "familyId": "PER-SKALA",
+      "variantId": 2,
+      "level": 1,
+      "skill": "perbandingan",
+      "active": true
+    },
+    {
+      "id": "G-158",
+      "topicId": "perbandingan",
+      "difficulty": "Mudah",
+      "question": "Skala sebuah peta 1 : 100. Jika panjang pada peta 3 cm, panjang sebenarnya adalah ...",
+      "options": [
+        "300 m",
+        "0,3 m",
+        "30 m",
+        "3 m"
+      ],
+      "answer": 3,
+      "solution": "Panjang sebenarnya = 3 × 100 = 300 cm = 3 m.",
+      "familyId": "PER-SKALA",
+      "variantId": 3,
+      "level": 1,
+      "skill": "perbandingan",
+      "active": true
+    },
+    {
+      "id": "G-159",
+      "topicId": "perbandingan",
+      "difficulty": "Mudah",
+      "question": "Skala sebuah peta 1 : 500. Jika panjang pada peta 4 cm, panjang sebenarnya adalah ...",
+      "options": [
+        "200 m",
+        "2000 m",
+        "20 m",
+        "2 m"
+      ],
+      "answer": 2,
+      "solution": "Panjang sebenarnya = 4 × 500 = 2000 cm = 20 m.",
+      "familyId": "PER-SKALA",
+      "variantId": 4,
+      "level": 1,
+      "skill": "perbandingan",
+      "active": true
+    },
+    {
+      "id": "G-160",
+      "topicId": "perbandingan",
+      "difficulty": "Mudah",
+      "question": "Skala sebuah peta 1 : 500. Jika panjang pada peta 5 cm, panjang sebenarnya adalah ...",
+      "options": [
+        "2500 m",
+        "25 m",
+        "250 m",
+        "2,5 m"
+      ],
+      "answer": 1,
+      "solution": "Panjang sebenarnya = 5 × 500 = 2500 cm = 25 m.",
+      "familyId": "PER-SKALA",
+      "variantId": 5,
+      "level": 1,
+      "skill": "perbandingan",
+      "active": true
+    },
+    {
+      "id": "G-161",
+      "topicId": "perbandingan",
+      "difficulty": "Sedang",
+      "question": "8 pekerja menyelesaikan sebuah pekerjaan dalam 18 hari. Jika pekerja menjadi 7 orang, pekerjaan itu selesai dalam ...",
+      "options": [
+        "19 hari",
+        "21 hari",
+        "22 hari",
+        "20 hari"
+      ],
+      "answer": 3,
+      "solution": "Perbandingan berbalik nilai:\n8 × 18 = 7 × x\n144 = 7x, sehingga x = 20 hari.",
+      "familyId": "PER-PEKERJA",
+      "variantId": 1,
+      "level": 2,
+      "skill": "perbandingan",
+      "active": true
+    },
+    {
+      "id": "G-162",
+      "topicId": "perbandingan",
+      "difficulty": "Sedang",
+      "question": "6 pekerja menyelesaikan sebuah pekerjaan dalam 12 hari. Jika pekerja menjadi 5 orang, pekerjaan itu selesai dalam ...",
+      "options": [
+        "15 hari",
+        "13 hari",
+        "16 hari",
+        "14 hari"
+      ],
+      "answer": 3,
+      "solution": "Perbandingan berbalik nilai:\n6 × 12 = 5 × x\n72 = 5x, sehingga x = 14 hari.",
+      "familyId": "PER-PEKERJA",
+      "variantId": 2,
+      "level": 2,
+      "skill": "perbandingan",
+      "active": true
+    },
+    {
+      "id": "G-164",
+      "topicId": "perbandingan",
+      "difficulty": "Sedang",
+      "question": "8 pekerja menyelesaikan sebuah pekerjaan dalam 12 hari. Jika pekerja menjadi 7 orang, pekerjaan itu selesai dalam ...",
+      "options": [
+        "12 hari",
+        "14 hari",
+        "13 hari",
+        "15 hari"
+      ],
+      "answer": 2,
+      "solution": "Perbandingan berbalik nilai:\n8 × 12 = 7 × x\n96 = 7x, sehingga x = 13 hari.",
+      "familyId": "PER-PEKERJA",
+      "variantId": 4,
+      "level": 2,
+      "skill": "perbandingan",
+      "active": true
+    },
+    {
+      "id": "G-165",
+      "topicId": "perbandingan",
+      "difficulty": "Sedang",
+      "question": "10 pekerja menyelesaikan sebuah pekerjaan dalam 12 hari. Jika pekerja menjadi 9 orang, pekerjaan itu selesai dalam ...",
+      "options": [
+        "15 hari",
+        "12 hari",
+        "13 hari",
+        "14 hari"
+      ],
+      "answer": 2,
+      "solution": "Perbandingan berbalik nilai:\n10 × 12 = 9 × x\n120 = 9x, sehingga x = 13 hari.",
+      "familyId": "PER-PEKERJA",
+      "variantId": 5,
+      "level": 2,
+      "skill": "perbandingan",
+      "active": true
+    },
+    {
+      "id": "G-166",
+      "topicId": "perbandingan",
+      "difficulty": "Mudah",
+      "question": "Harga sebuah barang Rp200.000 dan mendapat diskon 20%. Harga yang dibayar adalah ...",
+      "options": [
+        "Rp160.000",
+        "Rp150.000",
+        "Rp165.000",
+        "Rp155.000"
+      ],
+      "answer": 0,
+      "solution": "Diskon = 20% × Rp200.000 = Rp40.000.\nHarga bayar = Rp200.000 − Rp40.000 = Rp160.000.",
+      "familyId": "PER-DISKON",
+      "variantId": 1,
+      "level": 1,
+      "skill": "perbandingan",
+      "active": true
+    },
+    {
+      "id": "G-167",
+      "topicId": "perbandingan",
+      "difficulty": "Mudah",
+      "question": "Harga sebuah barang Rp60.000 dan mendapat diskon 30%. Harga yang dibayar adalah ...",
+      "options": [
+        "Rp37.000",
+        "Rp47.000",
+        "Rp32.000",
+        "Rp42.000"
+      ],
+      "answer": 3,
+      "solution": "Diskon = 30% × Rp60.000 = Rp18.000.\nHarga bayar = Rp60.000 − Rp18.000 = Rp42.000.",
+      "familyId": "PER-DISKON",
+      "variantId": 2,
+      "level": 1,
+      "skill": "perbandingan",
+      "active": true
+    },
+    {
+      "id": "G-168",
+      "topicId": "perbandingan",
+      "difficulty": "Mudah",
+      "question": "Harga sebuah barang Rp80.000 dan mendapat diskon 25%. Harga yang dibayar adalah ...",
+      "options": [
+        "Rp65.000",
+        "Rp55.000",
+        "Rp60.000",
+        "Rp50.000"
+      ],
+      "answer": 2,
+      "solution": "Diskon = 25% × Rp80.000 = Rp20.000.\nHarga bayar = Rp80.000 − Rp20.000 = Rp60.000.",
+      "familyId": "PER-DISKON",
+      "variantId": 3,
+      "level": 1,
+      "skill": "perbandingan",
+      "active": true
+    },
+    {
+      "id": "G-171",
+      "topicId": "perbandingan",
+      "difficulty": "Sedang",
+      "question": "Barang dibeli dengan harga Rp40.000 dan dijual Rp52.000. Persentase untungnya adalah ...",
+      "options": [
+        "40%",
+        "35%",
+        "30%",
+        "25%"
+      ],
+      "answer": 2,
+      "solution": "Untung = Rp52.000 − Rp40.000 = Rp12.000.\nPersentase untung = Rp12.000/Rp40.000 × 100% = 30%.",
+      "familyId": "PER-UNTUNG",
+      "variantId": 1,
+      "level": 2,
+      "skill": "perbandingan",
+      "active": true
+    },
+    {
+      "id": "G-172",
+      "topicId": "perbandingan",
+      "difficulty": "Sedang",
+      "question": "Barang dibeli dengan harga Rp80.000 dan dijual Rp100.000. Persentase untungnya adalah ...",
+      "options": [
+        "25%",
+        "35%",
+        "20%",
+        "30%"
+      ],
+      "answer": 0,
+      "solution": "Untung = Rp100.000 − Rp80.000 = Rp20.000.\nPersentase untung = Rp20.000/Rp80.000 × 100% = 25%.",
+      "familyId": "PER-UNTUNG",
+      "variantId": 2,
+      "level": 2,
+      "skill": "perbandingan",
+      "active": true
+    },
+    {
+      "id": "G-173",
+      "topicId": "perbandingan",
+      "difficulty": "Sedang",
+      "question": "Barang dibeli dengan harga Rp50.000 dan dijual Rp60.000. Persentase untungnya adalah ...",
+      "options": [
+        "30%",
+        "20%",
+        "25%",
+        "15%"
+      ],
+      "answer": 1,
+      "solution": "Untung = Rp60.000 − Rp50.000 = Rp10.000.\nPersentase untung = Rp10.000/Rp50.000 × 100% = 20%.",
+      "familyId": "PER-UNTUNG",
+      "variantId": 3,
+      "level": 2,
+      "skill": "perbandingan",
+      "active": true
+    },
+    {
+      "id": "G-174",
+      "topicId": "perbandingan",
+      "difficulty": "Sedang",
+      "question": "Barang dibeli dengan harga Rp40.000 dan dijual Rp44.000. Persentase untungnya adalah ...",
+      "options": [
+        "10%",
+        "15%",
+        "5%",
+        "20%"
+      ],
+      "answer": 0,
+      "solution": "Untung = Rp44.000 − Rp40.000 = Rp4.000.\nPersentase untung = Rp4.000/Rp40.000 × 100% = 10%.",
+      "familyId": "PER-UNTUNG",
+      "variantId": 4,
+      "level": 2,
+      "skill": "perbandingan",
+      "active": true
+    },
+    {
+      "id": "G-175",
+      "topicId": "perbandingan",
+      "difficulty": "Sedang",
+      "question": "Barang dibeli dengan harga Rp60.000 dan dijual Rp72.000. Persentase untungnya adalah ...",
+      "options": [
+        "25%",
+        "15%",
+        "20%",
+        "30%"
+      ],
+      "answer": 2,
+      "solution": "Untung = Rp72.000 − Rp60.000 = Rp12.000.\nPersentase untung = Rp12.000/Rp60.000 × 100% = 20%.",
+      "familyId": "PER-UNTUNG",
+      "variantId": 5,
+      "level": 2,
+      "skill": "perbandingan",
+      "active": true
+    },
+    {
+      "id": "G-176",
+      "topicId": "perbandingan",
+      "difficulty": "Tantangan",
+      "question": "Modal Rp1.000.000 disimpan dengan bunga tunggal 8% per tahun selama 6 bulan. Besar bunganya adalah ...",
+      "options": [
+        "Rp30.000",
+        "Rp50.000",
+        "Rp80.000",
+        "Rp40.000"
+      ],
+      "answer": 3,
+      "solution": "Bunga = modal × suku bunga × waktu\n= Rp1.000.000 × 8% × 6/12 = Rp40.000.",
+      "familyId": "PER-BUNGA",
+      "variantId": 1,
+      "level": 3,
+      "skill": "perbandingan",
+      "active": true
+    },
+    {
+      "id": "G-177",
+      "topicId": "perbandingan",
+      "difficulty": "Tantangan",
+      "question": "Modal Rp3.000.000 disimpan dengan bunga tunggal 8% per tahun selama 9 bulan. Besar bunganya adalah ...",
+      "options": [
+        "Rp360.000",
+        "Rp170.000",
+        "Rp190.000",
+        "Rp180.000"
+      ],
+      "answer": 3,
+      "solution": "Bunga = modal × suku bunga × waktu\n= Rp3.000.000 × 8% × 9/12 = Rp180.000.",
+      "familyId": "PER-BUNGA",
+      "variantId": 2,
+      "level": 3,
+      "skill": "perbandingan",
+      "active": true
+    },
+    {
+      "id": "G-178",
+      "topicId": "perbandingan",
+      "difficulty": "Tantangan",
+      "question": "Modal Rp1.000.000 disimpan dengan bunga tunggal 8% per tahun selama 9 bulan. Besar bunganya adalah ...",
+      "options": [
+        "Rp60.000",
+        "Rp50.000",
+        "Rp70.000",
+        "Rp120.000"
+      ],
+      "answer": 0,
+      "solution": "Bunga = modal × suku bunga × waktu\n= Rp1.000.000 × 8% × 9/12 = Rp60.000.",
+      "familyId": "PER-BUNGA",
+      "variantId": 3,
+      "level": 3,
+      "skill": "perbandingan",
+      "active": true
+    },
+    {
+      "id": "G-179",
+      "topicId": "perbandingan",
+      "difficulty": "Tantangan",
+      "question": "Modal Rp4.000.000 disimpan dengan bunga tunggal 4% per tahun selama 12 bulan. Besar bunganya adalah ...",
+      "options": [
+        "Rp170.000",
+        "Rp160.000",
+        "Rp150.000",
+        "Rp320.000"
+      ],
+      "answer": 1,
+      "solution": "Bunga = modal × suku bunga × waktu\n= Rp4.000.000 × 4% × 12/12 = Rp160.000.",
+      "familyId": "PER-BUNGA",
+      "variantId": 4,
+      "level": 3,
+      "skill": "perbandingan",
+      "active": true
+    },
+    {
+      "id": "G-180",
+      "topicId": "perbandingan",
+      "difficulty": "Tantangan",
+      "question": "Modal Rp3.000.000 disimpan dengan bunga tunggal 5% per tahun selama 6 bulan. Besar bunganya adalah ...",
+      "options": [
+        "Rp85.000",
+        "Rp150.000",
+        "Rp65.000",
+        "Rp75.000"
+      ],
+      "answer": 3,
+      "solution": "Bunga = modal × suku bunga × waktu\n= Rp3.000.000 × 5% × 6/12 = Rp75.000.",
+      "familyId": "PER-BUNGA",
+      "variantId": 5,
+      "level": 3,
+      "skill": "perbandingan",
+      "active": true
+    },
+    {
+      "id": "G-181",
+      "topicId": "bilangan",
+      "difficulty": "Sedang",
+      "question": "Nilai dari (3³ × 3²) ÷ 3⁴ adalah ...",
+      "options": [
+        "3",
+        "6",
+        "9",
+        "27"
+      ],
+      "answer": 0,
+      "solution": "3³ × 3² = 3⁵.\n3⁵ ÷ 3⁴ = 3¹ = 3.",
+      "familyId": "RESERVE-BILANGAN-1",
+      "variantId": 1,
+      "level": 2,
+      "skill": "bilangan",
+      "active": true
+    },
+    {
+      "id": "G-182",
+      "topicId": "bilangan",
+      "difficulty": "Sedang",
+      "question": "Bentuk sederhana dari √50 + √18 adalah ...",
+      "options": [
+        "8√2",
+        "7√2",
+        "6√2",
+        "5√2"
+      ],
+      "answer": 0,
+      "solution": "√50 = 5√2 dan √18 = 3√2.\nJumlahnya (5 + 3)√2 = 8√2.",
+      "familyId": "RESERVE-BILANGAN-2",
+      "variantId": 1,
+      "level": 2,
+      "skill": "bilangan",
+      "active": true
+    },
+    {
+      "id": "G-183",
+      "topicId": "bilangan",
+      "difficulty": "Mudah",
+      "question": "Nilai dari (√7)² + (√3)² adalah ...",
+      "options": [
+        "10",
+        "7",
+        "4",
+        "21"
+      ],
+      "answer": 0,
+      "solution": "(√7)² = 7 dan (√3)² = 3.\nJumlahnya 7 + 3 = 10.",
+      "familyId": "RESERVE-BILANGAN-3",
+      "variantId": 1,
+      "level": 1,
+      "skill": "bilangan",
+      "active": true
+    },
+    {
+      "id": "G-184",
+      "topicId": "aljabar",
+      "difficulty": "Mudah",
+      "question": "Akar-akar persamaan x² − 7x + 12 = 0 adalah ...",
+      "options": [
+        "3 dan 4",
+        "2 dan 6",
+        "−3 dan −4",
+        "1 dan 12"
+      ],
+      "answer": 0,
+      "solution": "x² − 7x + 12 = (x − 3)(x − 4).\nAkar-akarnya 3 dan 4.",
+      "familyId": "RESERVE-ALJABAR-1",
+      "variantId": 1,
+      "level": 1,
+      "skill": "aljabar",
+      "active": true
+    },
+    {
+      "id": "G-185",
+      "topicId": "aljabar",
+      "difficulty": "Sedang",
+      "question": "Nilai diskriminan persamaan x² + 4x + 3 = 0 adalah ...",
+      "options": [
+        "4",
+        "2",
+        "8",
+        "16"
+      ],
+      "answer": 0,
+      "solution": "D = b² − 4ac = 4² − 4(1)(3) = 16 − 12 = 4.",
+      "familyId": "RESERVE-ALJABAR-2",
+      "variantId": 1,
+      "level": 2,
+      "skill": "aljabar",
+      "active": true
+    },
+    {
+      "id": "G-186",
+      "topicId": "fungsi",
+      "difficulty": "Mudah",
+      "question": "Gradien garis yang melalui titik (1, 2) dan (4, 8) adalah ...",
+      "options": [
+        "2",
+        "3",
+        "4",
+        "6"
+      ],
+      "answer": 0,
+      "solution": "m = (8 − 2)/(4 − 1) = 6/3 = 2.",
+      "familyId": "RESERVE-FUNGSI-1",
+      "variantId": 1,
+      "level": 1,
+      "skill": "fungsi",
+      "active": true
+    },
+    {
+      "id": "G-187",
+      "topicId": "geometri",
+      "difficulty": "Mudah",
+      "question": "Luas lingkaran dengan diameter 14 cm adalah ... (π = 22/7)",
+      "options": [
+        "154 cm²",
+        "44 cm²",
+        "616 cm²",
+        "77 cm²"
+      ],
+      "answer": 0,
+      "solution": "r = 14/2 = 7 cm.\nL = 22/7 × 7² = 154 cm².",
+      "familyId": "RESERVE-GEOMETRI-1",
+      "variantId": 1,
+      "level": 1,
+      "skill": "geometri",
+      "active": true
+    },
+    {
+      "id": "G-188",
+      "topicId": "geometri",
+      "difficulty": "Sedang",
+      "question": "Volume tabung dengan jari-jari 7 cm dan tinggi 20 cm adalah ... (π = 22/7)",
+      "options": [
+        "3.080 cm³",
+        "1.540 cm³",
+        "4.620 cm³",
+        "6.160 cm³"
+      ],
+      "answer": 0,
+      "solution": "V = 22/7 × 7² × 20 = 22/7 × 49 × 20 = 3.080 cm³.",
+      "familyId": "RESERVE-GEOMETRI-2",
+      "variantId": 1,
+      "level": 2,
+      "skill": "geometri",
+      "active": true
+    },
+    {
+      "id": "G-189",
+      "topicId": "geometri",
+      "difficulty": "Sedang",
+      "question": "Panjang busur lingkaran dengan sudut pusat 90° dan jari-jari 28 cm adalah ... (π = 22/7)",
+      "options": [
+        "44 cm",
+        "22 cm",
+        "88 cm",
+        "66 cm"
+      ],
+      "answer": 0,
+      "solution": "Busur = 90/360 × 2 × 22/7 × 28 = 1/4 × 176 = 44 cm.",
+      "familyId": "RESERVE-GEOMETRI-3",
+      "variantId": 1,
+      "level": 2,
+      "skill": "geometri",
+      "active": true
+    },
+    {
+      "id": "G-190",
+      "topicId": "geometri",
+      "difficulty": "Sedang",
+      "question": "Luas permukaan kubus dengan panjang sisi 9 cm adalah ...",
+      "options": [
+        "486 cm²",
+        "324 cm²",
+        "729 cm²",
+        "162 cm²"
+      ],
+      "answer": 0,
+      "solution": "L = 6s² = 6 × 9² = 6 × 81 = 486 cm².",
+      "familyId": "RESERVE-GEOMETRI-4",
+      "variantId": 1,
+      "level": 2,
+      "skill": "geometri",
+      "active": true
+    },
+    {
+      "id": "G-191",
+      "topicId": "statistika",
+      "difficulty": "Mudah",
+      "question": "Rata-rata dari data 4, 6, 8, 10, 12 adalah ...",
+      "options": [
+        "8",
+        "7",
+        "9",
+        "10"
+      ],
+      "answer": 0,
+      "solution": "Jumlah = 4 + 6 + 8 + 10 + 12 = 40.\nRata-rata = 40/5 = 8.",
+      "familyId": "RESERVE-STATISTIKA-1",
+      "variantId": 1,
+      "level": 1,
+      "skill": "statistika",
+      "active": true
+    },
+    {
+      "id": "G-192",
+      "topicId": "statistika",
+      "difficulty": "Mudah",
+      "question": "Median dari data 2, 4, 6, 8, 10, 12 adalah ...",
+      "options": [
+        "7",
+        "6",
+        "8",
+        "9"
+      ],
+      "answer": 0,
+      "solution": "Median = (6 + 8)/2 = 7.",
+      "familyId": "RESERVE-STATISTIKA-2",
+      "variantId": 1,
+      "level": 1,
+      "skill": "statistika",
+      "active": true
+    },
+    {
+      "id": "G-193",
+      "topicId": "statistika",
+      "difficulty": "Mudah",
+      "question": "Modus dari data 3, 4, 4, 5, 5, 5, 6 adalah ...",
+      "options": [
+        "5",
+        "4",
+        "3",
+        "6"
+      ],
+      "answer": 0,
+      "solution": "Nilai 5 muncul tiga kali, paling sering.\nModusnya 5.",
+      "familyId": "RESERVE-STATISTIKA-3",
+      "variantId": 1,
+      "level": 1,
+      "skill": "statistika",
+      "active": true
+    },
+    {
+      "id": "G-194",
+      "topicId": "statistika",
+      "difficulty": "Mudah",
+      "question": "Sebuah dadu dilempar satu kali. Peluang muncul bilangan prima adalah ...",
+      "options": [
+        "1/2",
+        "1/3",
+        "2/3",
+        "1/6"
+      ],
+      "answer": 0,
+      "solution": "Bilangan prima pada dadu adalah 2, 3, dan 5, sebanyak 3.\nPeluang = 3/6 = 1/2.",
+      "familyId": "RESERVE-STATISTIKA-4",
+      "variantId": 1,
+      "level": 1,
+      "skill": "statistika",
+      "active": true
+    },
+    {
+      "id": "G-195",
+      "topicId": "statistika",
+      "difficulty": "Mudah",
+      "question": "Peluang hujan pada suatu hari adalah 0,6. Peluang tidak hujan adalah ...",
+      "options": [
+        "0,4",
+        "0,6",
+        "0,5",
+        "0,3"
+      ],
+      "answer": 0,
+      "solution": "Peluang tidak hujan = 1 − 0,6 = 0,4.",
+      "familyId": "RESERVE-STATISTIKA-5",
+      "variantId": 1,
+      "level": 1,
+      "skill": "statistika",
+      "active": true
+    },
+    {
+      "id": "G-196",
+      "topicId": "perbandingan",
+      "difficulty": "Mudah",
+      "question": "Perbandingan dua bilangan adalah 2 : 3. Jika jumlah keduanya 40, bilangan yang lebih besar adalah ...",
+      "options": [
+        "24",
+        "16",
+        "20",
+        "30"
+      ],
+      "answer": 0,
+      "solution": "Jumlah bagian = 5.\nBilangan terbesar = 3/5 × 40 = 24.",
+      "familyId": "RESERVE-PERBANDINGAN-1",
+      "variantId": 1,
+      "level": 1,
+      "skill": "perbandingan",
+      "active": true
+    },
+    {
+      "id": "G-197",
+      "topicId": "perbandingan",
+      "difficulty": "Mudah",
+      "question": "Skala sebuah peta 1 : 500. Jika panjang pada peta 4 cm, panjang sebenarnya adalah ...",
+      "options": [
+        "20 m",
+        "2 m",
+        "200 m",
+        "2.000 m"
+      ],
+      "answer": 0,
+      "solution": "Panjang sebenarnya = 4 × 500 = 2.000 cm = 20 m.",
+      "familyId": "RESERVE-PERBANDINGAN-2",
+      "variantId": 1,
+      "level": 1,
+      "skill": "perbandingan",
+      "active": true
+    },
+    {
+      "id": "G-198",
+      "topicId": "perbandingan",
+      "difficulty": "Mudah",
+      "question": "Harga sebuah barang Rp120.000 dan mendapat diskon 25%. Harga yang dibayar adalah ...",
+      "options": [
+        "Rp90.000",
+        "Rp80.000",
+        "Rp95.000",
+        "Rp100.000"
+      ],
+      "answer": 0,
+      "solution": "Diskon = 25% × 120.000 = 30.000.\nHarga bayar = 120.000 − 30.000 = Rp90.000.",
+      "familyId": "RESERVE-PERBANDINGAN-3",
+      "variantId": 1,
+      "level": 1,
+      "skill": "perbandingan",
+      "active": true
+    },
+    {
+      "id": "G-199",
+      "topicId": "perbandingan",
+      "difficulty": "Sedang",
+      "question": "Modal Rp3.000.000 disimpan dengan bunga tunggal 5% per tahun selama 6 bulan. Besar bunganya adalah ...",
+      "options": [
+        "Rp75.000",
+        "Rp90.000",
+        "Rp150.000",
+        "Rp60.000"
+      ],
+      "answer": 0,
+      "solution": "Bunga = 3.000.000 × 5% × 6/12 = Rp75.000.",
+      "familyId": "RESERVE-PERBANDINGAN-4",
+      "variantId": 1,
+      "level": 2,
+      "skill": "perbandingan",
+      "active": true
+    },
+    {
+      "id": "G-200",
+      "topicId": "bilangan",
+      "difficulty": "Tantangan",
+      "question": "Nilai dari (2⁵ × 2³) ÷ 2⁶ adalah ...",
+      "options": [
+        "4",
+        "2",
+        "8",
+        "16"
+      ],
+      "answer": 0,
+      "solution": "2⁵ × 2³ = 2⁸.\n2⁸ ÷ 2⁶ = 2² = 4.",
+      "familyId": "RESERVE-BILANGAN-4",
+      "variantId": 1,
+      "level": 3,
+      "skill": "bilangan",
+      "active": true
+    },
+    {
+      "id": "G-201",
+      "topicId": "aljabar",
+      "difficulty": "Sedang",
+      "question": "Titik puncak grafik y = x² − 6x + 5 adalah ...",
+      "options": [
+        "(3, −4)",
+        "(−3, −4)",
+        "(3, 4)",
+        "(6, 5)"
+      ],
+      "answer": 0,
+      "solution": "x = 6/2 = 3.\ny = 9 − 18 + 5 = −4.\nTitik puncaknya (3, −4).",
+      "familyId": "RESERVE-ALJABAR-3",
+      "variantId": 1,
+      "level": 2,
+      "skill": "aljabar",
+      "active": true
+    },
+    {
+      "id": "G-202",
+      "topicId": "fungsi",
+      "difficulty": "Sedang",
+      "question": "Garis yang tegak lurus dengan y = 3x + 2 memiliki gradien ...",
+      "options": [
+        "−1/3",
+        "3",
+        "−3",
+        "1/3"
+      ],
+      "answer": 0,
+      "solution": "Gradien garis awal 3.\nDua garis tegak lurus jika hasil kali gradiennya −1.\nMaka gradiennya −1/3.",
+      "familyId": "RESERVE-FUNGSI-2",
+      "variantId": 1,
+      "level": 2,
+      "skill": "fungsi",
+      "active": true
+    },
+    {
+      "id": "G-203",
+      "topicId": "geometri",
+      "difficulty": "Sedang",
+      "question": "Volume kerucut dengan jari-jari 7 cm dan tinggi 6 cm adalah ... (π = 22/7)",
+      "options": [
+        "308 cm³",
+        "154 cm³",
+        "616 cm³",
+        "924 cm³"
+      ],
+      "answer": 0,
+      "solution": "V = 1/3 × 22/7 × 7² × 6 = 1/3 × 22/7 × 49 × 6 = 308 cm³.",
+      "familyId": "RESERVE-GEOMETRI-5",
+      "variantId": 1,
+      "level": 2,
+      "skill": "geometri",
+      "active": true
+    },
+    {
+      "id": "CER-01",
+      "topicId": "bilangan",
+      "difficulty": "Mudah",
+      "question": "Ibu membeli 3 kardus telur. Setiap kardus berisi 24 butir, tetapi 7 butir ternyata pecah. Banyak telur yang masih utuh adalah ...",
+      "options": [
+        "65 butir",
+        "72 butir",
+        "67 butir",
+        "79 butir"
+      ],
+      "answer": 0,
+      "solution": "Total telur = 3 × 24 = 72 butir.\nTelur utuh = 72 − 7 = 65 butir.",
+      "familyId": "CER-01",
+      "variantId": 1,
+      "level": 1,
+      "skill": "logika",
+      "active": true
+    },
+    {
+      "id": "CER-02",
+      "topicId": "bilangan",
+      "difficulty": "Sedang",
+      "question": "Sebuah bilangan jika dibagi 5 bersisa 3 dan jika dibagi 7 bersisa 4. Bilangan terkecil yang memenuhi adalah ...",
+      "options": [
+        "18",
+        "28",
+        "33",
+        "38"
+      ],
+      "answer": 0,
+      "solution": "Bilangan yang dibagi 5 bersisa 3: 3, 8, 13, 18, ...\nCek 18: 18 ÷ 5 sisa 3 dan 18 ÷ 7 sisa 4.\nMaka bilangan terkecil adalah 18.",
+      "familyId": "CER-02",
+      "variantId": 1,
+      "level": 2,
+      "skill": "logika",
+      "active": true
+    },
+    {
+      "id": "CER-03",
+      "topicId": "bilangan",
+      "difficulty": "Sedang",
+      "question": "Raka menyusun bilangan genap 2, 4, 6, 8, 10, ... secara berurutan. Selisih antara bilangan ke-100 dan ke-50 adalah ...",
+      "options": [
+        "100",
+        "200",
+        "50",
+        "150"
+      ],
+      "answer": 0,
+      "solution": "Bilangan genap ke-n = 2n.\nKe-100 = 200 dan ke-50 = 100.\nSelisih = 200 − 100 = 100.",
+      "familyId": "CER-03",
+      "variantId": 1,
+      "level": 2,
+      "skill": "logika",
+      "active": true
+    },
+    {
+      "id": "CER-04",
+      "topicId": "bilangan",
+      "difficulty": "Sedang",
+      "question": "Tiga bilangan asli berurutan berjumlah 84. Bilangan yang berada di tengah adalah ...",
+      "options": [
+        "27",
+        "28",
+        "29",
+        "30"
+      ],
+      "answer": 1,
+      "solution": "Misal bilangan tengah x, maka (x−1) + x + (x+1) = 84.\n3x = 84 sehingga x = 28.",
+      "familyId": "CER-04",
+      "variantId": 1,
+      "level": 2,
+      "skill": "logika",
+      "active": true
+    },
+    {
+      "id": "CER-05",
+      "topicId": "aljabar",
+      "difficulty": "Mudah",
+      "question": "Umur ayah tiga kali umur Dini. Jumlah umur mereka 48 tahun. Umur Dini adalah ...",
+      "options": [
+        "12 tahun",
+        "14 tahun",
+        "16 tahun",
+        "10 tahun"
+      ],
+      "answer": 0,
+      "solution": "Misal umur Dini = x, umur ayah = 3x.\nx + 3x = 48 → 4x = 48 → x = 12 tahun.",
+      "familyId": "CER-05",
+      "variantId": 1,
+      "level": 1,
+      "skill": "logika",
+      "active": true
+    },
+    {
+      "id": "CER-06",
+      "topicId": "aljabar",
+      "difficulty": "Sedang",
+      "question": "Jumlah dua bilangan 24. Bilangan yang satu tiga kali bilangan yang lain. Kedua bilangan itu adalah ...",
+      "options": [
+        "6 dan 18",
+        "8 dan 16",
+        "5 dan 19",
+        "7 dan 17"
+      ],
+      "answer": 0,
+      "solution": "Misal bilangan kecil x, besar 3x.\nx + 3x = 24 → 4x = 24 → x = 6.\nMaka bilangannya 6 dan 18.",
+      "familyId": "CER-06",
+      "variantId": 1,
+      "level": 2,
+      "skill": "logika",
+      "active": true
+    },
+    {
+      "id": "CER-07",
+      "topicId": "aljabar",
+      "difficulty": "Sedang",
+      "question": "Harga 2 buku dan 3 pulpen Rp16.000, sedangkan harga 3 buku dan 2 pulpen Rp19.000. Harga sebuah buku adalah ...",
+      "options": [
+        "Rp5.000",
+        "Rp4.000",
+        "Rp6.000",
+        "Rp3.000"
+      ],
+      "answer": 0,
+      "solution": "Misal buku = b, pulpen = p.\n2b + 3p = 16000 dan 3b + 2p = 19000.\nKalikan (1) dengan 3 dan (2) dengan 2 lalu kurangkan:\n6b + 9p = 48000, 6b + 4p = 38000.\n5p = 10000 → p = 2000.\nSubstitusi: 2b + 6000 = 16000 → b = 5000.",
+      "familyId": "CER-07",
+      "variantId": 1,
+      "level": 2,
+      "skill": "logika",
+      "active": true
+    },
+    {
+      "id": "CER-08",
+      "topicId": "aljabar",
+      "difficulty": "Tantangan",
+      "question": "Umur Kakak sekarang 8 tahun lebih tua dari Adik. Dua tahun lagi jumlah umur mereka 40 tahun. Umur Adik sekarang adalah ...",
+      "options": [
+        "14 tahun",
+        "16 tahun",
+        "12 tahun",
+        "15 tahun"
+      ],
+      "answer": 0,
+      "solution": "Misal umur Adik = a, Kakak = a + 8.\n(a+2) + (a+8+2) = 40 → 2a + 12 = 40 → 2a = 28 → a = 14 tahun.",
+      "familyId": "CER-08",
+      "variantId": 1,
+      "level": 3,
+      "skill": "logika",
+      "active": true
+    },
+    {
+      "id": "CER-09",
+      "topicId": "fungsi",
+      "difficulty": "Mudah",
+      "question": "Sebuah kolam diisi air dengan kecepatan tetap 3 liter per menit. Setelah 12 menit, volume air di kolam adalah ...",
+      "options": [
+        "36 liter",
+        "33 liter",
+        "39 liter",
+        "30 liter"
+      ],
+      "answer": 0,
+      "solution": "Volume = kecepatan × waktu = 3 × 12 = 36 liter.",
+      "familyId": "CER-09",
+      "variantId": 1,
+      "level": 1,
+      "skill": "logika",
+      "active": true
+    },
+    {
+      "id": "CER-10",
+      "topicId": "fungsi",
+      "difficulty": "Sedang",
+      "question": "Taksi mematok tarif awal Rp5.000 dan Rp3.000 tiap kilometer. Tarif untuk jarak x km dinyatakan f(x) = 5000 + 3000x. Tarif untuk 8 km adalah ...",
+      "options": [
+        "Rp29.000",
+        "Rp26.000",
+        "Rp32.000",
+        "Rp24.000"
+      ],
+      "answer": 0,
+      "solution": "f(8) = 5000 + 3000 × 8 = 5000 + 24000 = 29000.",
+      "familyId": "CER-10",
+      "variantId": 1,
+      "level": 2,
+      "skill": "logika",
+      "active": true
+    },
+    {
+      "id": "CER-11",
+      "topicId": "fungsi",
+      "difficulty": "Sedang",
+      "question": "Suhu ruangan mula-mula 24°C lalu naik 2°C setiap jam. Suhu setelah 5 jam adalah ...",
+      "options": [
+        "34°C",
+        "32°C",
+        "36°C",
+        "30°C"
+      ],
+      "answer": 0,
+      "solution": "24 + 2 × 5 = 24 + 10 = 34°C.",
+      "familyId": "CER-11",
+      "variantId": 1,
+      "level": 2,
+      "skill": "logika",
+      "active": true
+    },
+    {
+      "id": "CER-12",
+      "topicId": "fungsi",
+      "difficulty": "Sedang",
+      "question": "Biaya parkir Rp2.000 untuk jam pertama dan Rp1.000 tiap jam berikutnya. Biaya parkir selama 6 jam adalah ...",
+      "options": [
+        "Rp7.000",
+        "Rp8.000",
+        "Rp6.000",
+        "Rp9.000"
+      ],
+      "answer": 0,
+      "solution": "2000 + 1000 × (6−1) = 2000 + 5000 = 7000.",
+      "familyId": "CER-12",
+      "variantId": 1,
+      "level": 2,
+      "skill": "logika",
+      "active": true
+    },
+    {
+      "id": "CER-13",
+      "topicId": "geometri",
+      "difficulty": "Mudah",
+      "question": "Sebuah taman berbentuk persegi panjang berukuran 12 m × 8 m akan dipagari. Panjang pagar yang dibutuhkan adalah ...",
+      "options": [
+        "40 m",
+        "48 m",
+        "96 m",
+        "20 m"
+      ],
+      "answer": 0,
+      "solution": "Keliling = 2 × (12 + 8) = 2 × 20 = 40 m.",
+      "familyId": "CER-13",
+      "variantId": 1,
+      "level": 1,
+      "skill": "logika",
+      "active": true
+    },
+    {
+      "id": "CER-14",
+      "topicId": "geometri",
+      "difficulty": "Sedang",
+      "question": "Sebuah kolam berbentuk kubus dengan sisi 2 m akan diisi air hingga setengahnya. Volume air yang dibutuhkan adalah ...",
+      "options": [
+        "4 m³",
+        "8 m³",
+        "6 m³",
+        "2 m³"
+      ],
+      "answer": 0,
+      "solution": "Volume kubus = 2³ = 8 m³.\nSetengahnya = 8 ÷ 2 = 4 m³.",
+      "familyId": "CER-14",
+      "variantId": 1,
+      "level": 2,
+      "skill": "logika",
+      "active": true
+    },
+    {
+      "id": "CER-15",
+      "topicId": "geometri",
+      "difficulty": "Sedang",
+      "question": "Lantai ruangan 4 m × 3 m akan dipasangi ubin persegi berukuran 40 cm × 40 cm. Banyak ubin yang dibutuhkan adalah ...",
+      "options": [
+        "75 ubin",
+        "70 ubin",
+        "85 ubin",
+        "80 ubin"
+      ],
+      "answer": 0,
+      "solution": "Luas lantai = 400 cm × 300 cm = 120000 cm².\nLuas ubin = 40 × 40 = 1600 cm².\nBanyak ubin = 120000 ÷ 1600 = 75.",
+      "familyId": "CER-15",
+      "variantId": 1,
+      "level": 2,
+      "skill": "logika",
+      "active": true
+    },
+    {
+      "id": "CER-16",
+      "topicId": "geometri",
+      "difficulty": "Sedang",
+      "question": "Sebuah bak air berbentuk balok berukuran 60 cm × 40 cm × 50 cm. Kapasitas bak itu adalah ...",
+      "options": [
+        "120 liter",
+        "100 liter",
+        "150 liter",
+        "90 liter"
+      ],
+      "answer": 0,
+      "solution": "Volume = 60 × 40 × 50 = 120000 cm³ = 120 liter (1 liter = 1000 cm³).",
+      "familyId": "CER-16",
+      "variantId": 1,
+      "level": 2,
+      "skill": "logika",
+      "active": true
+    },
+    {
+      "id": "CER-17",
+      "topicId": "statistika",
+      "difficulty": "Mudah",
+      "question": "Nilai ulangan lima siswa: 7, 8, 6, 9, 8. Rata-rata nilai mereka adalah ...",
+      "options": [
+        "7,6",
+        "7,8",
+        "8,0",
+        "7,4"
+      ],
+      "answer": 0,
+      "solution": "Rata-rata = (7+8+6+9+8) ÷ 5 = 38 ÷ 5 = 7,6.",
+      "familyId": "CER-17",
+      "variantId": 1,
+      "level": 1,
+      "skill": "logika",
+      "active": true
+    },
+    {
+      "id": "CER-18",
+      "topicId": "statistika",
+      "difficulty": "Sedang",
+      "question": "Tinggi badan delapan pemain: 155, 157, 160, 158, 155, 162, 155, 158 cm. Modus tinggi pemain adalah ...",
+      "options": [
+        "155 cm",
+        "158 cm",
+        "157 cm",
+        "160 cm"
+      ],
+      "answer": 0,
+      "solution": "Nilai 155 muncul 3 kali, paling sering, jadi modusnya 155 cm.",
+      "familyId": "CER-18",
+      "variantId": 1,
+      "level": 2,
+      "skill": "logika",
+      "active": true
+    },
+    {
+      "id": "CER-19",
+      "topicId": "statistika",
+      "difficulty": "Sedang",
+      "question": "Median dari data 4, 7, 5, 6, 9, 8, 5 adalah ...",
+      "options": [
+        "6",
+        "5",
+        "7",
+        "8"
+      ],
+      "answer": 0,
+      "solution": "Urutkan: 4, 5, 5, 6, 7, 8, 9.\nNilai tengah (ke-4) = 6.",
+      "familyId": "CER-19",
+      "variantId": 1,
+      "level": 2,
+      "skill": "logika",
+      "active": true
+    },
+    {
+      "id": "CER-20",
+      "topicId": "statistika",
+      "difficulty": "Sedang",
+      "question": "Peluang muncul mata dadu genap pada pelemparan sebuah dadu enam sisi adalah ...",
+      "options": [
+        "1/2",
+        "1/3",
+        "1/6",
+        "2/3"
+      ],
+      "answer": 0,
+      "solution": "Mata dadu genap: 2, 4, 6 (3 dari 6 kemungkinan).\nPeluang = 3/6 = 1/2.",
+      "familyId": "CER-20",
+      "variantId": 1,
+      "level": 2,
+      "skill": "logika",
+      "active": true
+    },
+    {
+      "id": "CER-21",
+      "topicId": "perbandingan",
+      "difficulty": "Mudah",
+      "question": "Perbandingan uang Dina dan Rina 3 : 5. Jika uang Rina Rp40.000, uang Dina adalah ...",
+      "options": [
+        "Rp24.000",
+        "Rp20.000",
+        "Rp30.000",
+        "Rp26.000"
+      ],
+      "answer": 0,
+      "solution": "Uang Dina = (3/5) × 40000 = 24000.",
+      "familyId": "CER-21",
+      "variantId": 1,
+      "level": 1,
+      "skill": "logika",
+      "active": true
+    },
+    {
+      "id": "CER-22",
+      "topicId": "perbandingan",
+      "difficulty": "Sedang",
+      "question": "Tiga pekerja menyelesaikan pekerjaan dalam 8 hari. Agar selesai dalam 6 hari, banyak tambahan pekerja adalah ...",
+      "options": [
+        "1 orang",
+        "2 orang",
+        "3 orang",
+        "4 orang"
+      ],
+      "answer": 0,
+      "solution": "Total kerja = 3 × 8 = 24 orang-hari.\nUntuk 6 hari butuh 24 ÷ 6 = 4 orang.\nTambahan = 4 − 3 = 1 orang.",
+      "familyId": "CER-22",
+      "variantId": 1,
+      "level": 2,
+      "skill": "logika",
+      "active": true
+    },
+    {
+      "id": "CER-23",
+      "topicId": "perbandingan",
+      "difficulty": "Sedang",
+      "question": "Sebuah toko memberi diskon 20% untuk baju seharga Rp150.000. Harga yang dibayar adalah ...",
+      "options": [
+        "Rp120.000",
+        "Rp125.000",
+        "Rp130.000",
+        "Rp115.000"
+      ],
+      "answer": 0,
+      "solution": "Diskon = 20% × 150000 = 30000.\nHarga bayar = 150000 − 30000 = 120000.",
+      "familyId": "CER-23",
+      "variantId": 1,
+      "level": 2,
+      "skill": "logika",
+      "active": true
+    },
+    {
+      "id": "CER-24",
+      "topicId": "perbandingan",
+      "difficulty": "Sedang",
+      "question": "Skala peta 1 : 250.000. Jarak dua kota pada peta 6 cm. Jarak sebenarnya adalah ...",
+      "options": [
+        "15 km",
+        "12 km",
+        "18 km",
+        "10 km"
+      ],
+      "answer": 0,
+      "solution": "Jarak sebenarnya = 6 × 250000 = 1500000 cm = 15 km.",
+      "familyId": "CER-24",
+      "variantId": 1,
+      "level": 2,
+      "skill": "logika",
+      "active": true
+    },
+    {
+      "id": "CER-25",
+      "topicId": "bilangan",
+      "difficulty": "Mudah",
+      "question": "Sebuah bus memuat 42 penumpang. Di halte pertama turun 13 orang dan naik 8 orang. Banyak penumpang di bus sekarang adalah ...",
+      "options": [
+        "37 orang",
+        "29 orang",
+        "47 orang",
+        "33 orang"
+      ],
+      "answer": 0,
+      "solution": "42 − 13 = 29, lalu 29 + 8 = 37 orang.",
+      "familyId": "CER-25",
+      "variantId": 1,
+      "level": 1,
+      "skill": "logika",
+      "active": true
+    },
+    {
+      "id": "CER-26",
+      "topicId": "bilangan",
+      "difficulty": "Mudah",
+      "question": "Bu Ani membagikan 96 permen sama rata kepada 8 anak. Setiap anak mendapat ...",
+      "options": [
+        "12 permen",
+        "11 permen",
+        "13 permen",
+        "14 permen"
+      ],
+      "answer": 0,
+      "solution": "96 ÷ 8 = 12 permen.",
+      "familyId": "CER-26",
+      "variantId": 1,
+      "level": 1,
+      "skill": "logika",
+      "active": true
+    },
+    {
+      "id": "CER-27",
+      "topicId": "bilangan",
+      "difficulty": "Sedang",
+      "question": "Kelipatan persekutuan terkecil (KPK) dari 12 dan 18 adalah ...",
+      "options": [
+        "36",
+        "54",
+        "72",
+        "24"
+      ],
+      "answer": 0,
+      "solution": "Faktorisasi: 12 = 2²×3, 18 = 2×3².\nKPK = 2²×3² = 36.",
+      "familyId": "CER-27",
+      "variantId": 1,
+      "level": 2,
+      "skill": "logika",
+      "active": true
+    },
+    {
+      "id": "CER-28",
+      "topicId": "bilangan",
+      "difficulty": "Sedang",
+      "question": "Faktor persekutuan terbesar (FPB) dari 24 dan 36 adalah ...",
+      "options": [
+        "12",
+        "6",
+        "18",
+        "24"
+      ],
+      "answer": 0,
+      "solution": "24 = 2³×3, 36 = 2²×3².\nFPB = 2²×3 = 12.",
+      "familyId": "CER-28",
+      "variantId": 1,
+      "level": 2,
+      "skill": "logika",
+      "active": true
+    },
+    {
+      "id": "CER-29",
+      "topicId": "bilangan",
+      "difficulty": "Sedang",
+      "question": "Sebuah lampu lalu lintas menyala merah setiap 3 menit sekali. Lampu kedua menyala merah setiap 5 menit. Jika keduanya menyala merah bersamaan pada pukul 07.00, keduanya menyala merah bersamaan lagi pukul ...",
+      "options": [
+        "07.15",
+        "07.10",
+        "07.12",
+        "07.20"
+      ],
+      "answer": 0,
+      "solution": "KPK dari 3 dan 5 adalah 15.\nJadi bersamaan lagi 15 menit kemudian, pukul 07.15.",
+      "familyId": "CER-29",
+      "variantId": 1,
+      "level": 2,
+      "skill": "logika",
+      "active": true
+    },
+    {
+      "id": "CER-30",
+      "topicId": "bilangan",
+      "difficulty": "Tantangan",
+      "question": "Jumlah bilangan ganjil dari 1 sampai 19 adalah ...",
+      "options": [
+        "100",
+        "90",
+        "110",
+        "120"
+      ],
+      "answer": 0,
+      "solution": "Bilangan ganjil: 1,3,...,19 (10 bilangan).\nJumlah = 10² = 100 (jumlah n bilangan ganjil pertama = n²).",
+      "familyId": "CER-30",
+      "variantId": 1,
+      "level": 3,
+      "skill": "logika",
+      "active": true
+    },
+    {
+      "id": "CER-31",
+      "topicId": "aljabar",
+      "difficulty": "Mudah",
+      "question": "Sebuah bilangan ditambah 7 sama dengan 20. Bilangan itu adalah ...",
+      "options": [
+        "13",
+        "12",
+        "14",
+        "15"
+      ],
+      "answer": 0,
+      "solution": "x + 7 = 20 → x = 13.",
+      "familyId": "CER-31",
+      "variantId": 1,
+      "level": 1,
+      "skill": "logika",
+      "active": true
+    },
+    {
+      "id": "CER-32",
+      "topicId": "aljabar",
+      "difficulty": "Mudah",
+      "question": "Harga 4 buah buku tulis Rp20.000. Harga 6 buku tulis yang sama adalah ...",
+      "options": [
+        "Rp30.000",
+        "Rp24.000",
+        "Rp28.000",
+        "Rp36.000"
+      ],
+      "answer": 0,
+      "solution": "Harga per buku = 20000 ÷ 4 = 5000.\n6 buku = 6 × 5000 = 30000.",
+      "familyId": "CER-32",
+      "variantId": 1,
+      "level": 1,
+      "skill": "logika",
+      "active": true
+    },
+    {
+      "id": "CER-33",
+      "topicId": "aljabar",
+      "difficulty": "Sedang",
+      "question": "Umur Rina lima tahun lalu adalah setengah umurnya sekarang. Umur Rina sekarang adalah ...",
+      "options": [
+        "10 tahun",
+        "8 tahun",
+        "12 tahun",
+        "6 tahun"
+      ],
+      "answer": 0,
+      "solution": "Misal umur sekarang x, maka x−5 = x/2.\nx − x/2 = 5 → x/2 = 5 → x = 10.",
+      "familyId": "CER-33",
+      "variantId": 1,
+      "level": 2,
+      "skill": "logika",
+      "active": true
+    },
+    {
+      "id": "CER-34",
+      "topicId": "aljabar",
+      "difficulty": "Sedang",
+      "question": "Jumlah dua bilangan 40 dan selisihnya 8. Bilangan yang lebih besar adalah ...",
+      "options": [
+        "24",
+        "20",
+        "28",
+        "32"
+      ],
+      "answer": 0,
+      "solution": "x + y = 40 dan x − y = 8.\nJumlahkan: 2x = 48 → x = 24.",
+      "familyId": "CER-34",
+      "variantId": 1,
+      "level": 2,
+      "skill": "logika",
+      "active": true
+    },
+    {
+      "id": "CER-35",
+      "topicId": "aljabar",
+      "difficulty": "Sedang",
+      "question": "Sebuah persegi panjang memiliki keliling 44 cm dan panjang 12 cm. Lebarnya adalah ...",
+      "options": [
+        "10 cm",
+        "8 cm",
+        "12 cm",
+        "6 cm"
+      ],
+      "answer": 0,
+      "solution": "K = 2(p+l) = 44 → p+l = 22.\n12 + l = 22 → l = 10 cm.",
+      "familyId": "CER-35",
+      "variantId": 1,
+      "level": 2,
+      "skill": "logika",
+      "active": true
+    },
+    {
+      "id": "CER-36",
+      "topicId": "aljabar",
+      "difficulty": "Tantangan",
+      "question": "Tujuh tahun lagi umur Pak Rudi tiga kali umur anaknya sekarang. Jika umur anaknya sekarang 12 tahun, umur Pak Rudi sekarang adalah ...",
+      "options": [
+        "29 tahun",
+        "31 tahun",
+        "33 tahun",
+        "35 tahun"
+      ],
+      "answer": 0,
+      "solution": "Tujuh tahun lagi umur Pak Rudi = 3 × umur anak sekarang = 3 × 12 = 36.\nUmur Pak Rudi sekarang = 36 − 7 = 29 tahun.",
+      "familyId": "CER-36",
+      "variantId": 1,
+      "level": 3,
+      "skill": "logika",
+      "active": true
+    },
+    {
+      "id": "CER-37",
+      "topicId": "aljabar",
+      "difficulty": "Sedang",
+      "question": "Sisi-sisi segitiga dinyatakan sebagai x, 2x, dan 2x+1. Jika kelilingnya 26 cm, nilai x adalah ...",
+      "options": [
+        "5 cm",
+        "6 cm",
+        "7 cm",
+        "8 cm"
+      ],
+      "answer": 0,
+      "solution": "x + 2x + (2x+1) = 26 → 5x + 1 = 26 → 5x = 25 → x = 5.",
+      "familyId": "CER-37",
+      "variantId": 1,
+      "level": 2,
+      "skill": "logika",
+      "active": true
+    },
+    {
+      "id": "CER-38",
+      "topicId": "fungsi",
+      "difficulty": "Mudah",
+      "question": "Setiap botol minum berisi 600 ml. Air dalam 5 botol adalah ...",
+      "options": [
+        "3 liter",
+        "2,5 liter",
+        "3,5 liter",
+        "4 liter"
+      ],
+      "answer": 0,
+      "solution": "600 ml × 5 = 3000 ml = 3 liter.",
+      "familyId": "CER-38",
+      "variantId": 1,
+      "level": 1,
+      "skill": "logika",
+      "active": true
+    },
+    {
+      "id": "CER-39",
+      "topicId": "fungsi",
+      "difficulty": "Sedang",
+      "question": "Sebuah deret mengikuti pola 3, 6, 9, 12, ... Suku ke-20 adalah ...",
+      "options": [
+        "60",
+        "57",
+        "63",
+        "66"
+      ],
+      "answer": 0,
+      "solution": "Pola kelipatan 3, suku ke-n = 3n.\nSuku ke-20 = 3 × 20 = 60.",
+      "familyId": "CER-39",
+      "variantId": 1,
+      "level": 2,
+      "skill": "logika",
+      "active": true
+    },
+    {
+      "id": "CER-40",
+      "topicId": "fungsi",
+      "difficulty": "Sedang",
+      "question": "Biaya fotokopi Rp300 per lembar ditambah biaya tetap Rp1.000. Biaya untuk 50 lembar adalah ...",
+      "options": [
+        "Rp16.000",
+        "Rp15.000",
+        "Rp14.000",
+        "Rp17.000"
+      ],
+      "answer": 0,
+      "solution": "1000 + 300 × 50 = 1000 + 15000 = 16000.",
+      "familyId": "CER-40",
+      "variantId": 1,
+      "level": 2,
+      "skill": "logika",
+      "active": true
+    },
+    {
+      "id": "CER-41",
+      "topicId": "fungsi",
+      "difficulty": "Sedang",
+      "question": "Sebuah tangki berisi 200 liter air. Air mengalir keluar 8 liter per menit. Sisa air setelah 15 menit adalah ...",
+      "options": [
+        "80 liter",
+        "120 liter",
+        "100 liter",
+        "60 liter"
+      ],
+      "answer": 0,
+      "solution": "Air keluar = 8 × 15 = 120 liter.\nSisa = 200 − 120 = 80 liter.",
+      "familyId": "CER-41",
+      "variantId": 1,
+      "level": 2,
+      "skill": "logika",
+      "active": true
+    },
+    {
+      "id": "CER-42",
+      "topicId": "fungsi",
+      "difficulty": "Tantangan",
+      "question": "Pola titik membentuk barisan 1, 4, 9, 16, ... Banyak titik pada suku ke-8 adalah ...",
+      "options": [
+        "64",
+        "49",
+        "81",
+        "100"
+      ],
+      "answer": 0,
+      "solution": "Pola bilangan kuadrat: suku ke-n = n².\nSuku ke-8 = 8² = 64.",
+      "familyId": "CER-42",
+      "variantId": 1,
+      "level": 3,
+      "skill": "logika",
+      "active": true
+    },
+    {
+      "id": "CER-43",
+      "topicId": "geometri",
+      "difficulty": "Mudah",
+      "question": "Sebuah papan tulis berbentuk persegi dengan sisi 120 cm. Kelilingnya adalah ...",
+      "options": [
+        "480 cm",
+        "240 cm",
+        "360 cm",
+        "600 cm"
+      ],
+      "answer": 0,
+      "solution": "Keliling persegi = 4 × sisi = 4 × 120 = 480 cm.",
+      "familyId": "CER-43",
+      "variantId": 1,
+      "level": 1,
+      "skill": "logika",
+      "active": true
+    },
+    {
+      "id": "CER-44",
+      "topicId": "geometri",
+      "difficulty": "Sedang",
+      "question": "Sebuah akuarium berbentuk kubus dengan sisi 40 cm. Volume air yang memenuhi setengah akuarium adalah ...",
+      "options": [
+        "32 liter",
+        "64 liter",
+        "40 liter",
+        "16 liter"
+      ],
+      "answer": 0,
+      "solution": "Volume kubus = 40³ = 64000 cm³ = 64 liter.\nSetengahnya = 32 liter.",
+      "familyId": "CER-44",
+      "variantId": 1,
+      "level": 2,
+      "skill": "logika",
+      "active": true
+    },
+    {
+      "id": "CER-45",
+      "topicId": "geometri",
+      "difficulty": "Sedang",
+      "question": "Sebuah lingkaran memiliki jari-jari 14 cm. Kelilingnya adalah ... (π = 22/7)",
+      "options": [
+        "88 cm",
+        "44 cm",
+        "176 cm",
+        "132 cm"
+      ],
+      "answer": 0,
+      "solution": "K = 2πr = 2 × 22/7 × 14 = 88 cm.",
+      "familyId": "CER-45",
+      "variantId": 1,
+      "level": 2,
+      "skill": "logika",
+      "active": true
+    },
+    {
+      "id": "CER-46",
+      "topicId": "geometri",
+      "difficulty": "Sedang",
+      "question": "Taman berbentuk persegi panjang berukuran 15 m × 6 m. Luasnya adalah ...",
+      "options": [
+        "90 m²",
+        "42 m²",
+        "60 m²",
+        "100 m²"
+      ],
+      "answer": 0,
+      "solution": "Luas = panjang × lebar = 15 × 6 = 90 m².",
+      "familyId": "CER-46",
+      "variantId": 1,
+      "level": 2,
+      "skill": "logika",
+      "active": true
+    },
+    {
+      "id": "CER-47",
+      "topicId": "geometri",
+      "difficulty": "Tantangan",
+      "question": "Sebuah kaleng berbentuk tabung dengan jari-jari 7 cm dan tinggi 10 cm. Volumenya adalah ... (π = 22/7)",
+      "options": [
+        "1.540 cm³",
+        "1.440 cm³",
+        "2.200 cm³",
+        "1.320 cm³"
+      ],
+      "answer": 0,
+      "solution": "V = πr²t = 22/7 × 7² × 10 = 22/7 × 49 × 10 = 1540 cm³.",
+      "familyId": "CER-47",
+      "variantId": 1,
+      "level": 3,
+      "skill": "logika",
+      "active": true
+    },
+    {
+      "id": "CER-48",
+      "topicId": "statistika",
+      "difficulty": "Mudah",
+      "question": "Suhu udara suatu kota dalam seminggu: 30, 31, 32, 30, 33, 31, 30°C. Rata-rata suhu adalah ...",
+      "options": [
+        "31°C",
+        "30°C",
+        "32°C",
+        "30,5°C"
+      ],
+      "answer": 0,
+      "solution": "Jumlah = 30+31+32+30+33+31+30 = 217.\nRata-rata = 217 ÷ 7 = 31.",
+      "familyId": "CER-48",
+      "variantId": 1,
+      "level": 1,
+      "skill": "logika",
+      "active": true
+    },
+    {
+      "id": "CER-49",
+      "topicId": "statistika",
+      "difficulty": "Sedang",
+      "question": "Nilai enam siswa: 6, 7, 8, 6, 9, 8. Median nilainya adalah ...",
+      "options": [
+        "7,5",
+        "7",
+        "8",
+        "8,5"
+      ],
+      "answer": 0,
+      "solution": "Urutkan: 6, 6, 7, 8, 8, 9.\nMedian = (7 + 8) ÷ 2 = 7,5.",
+      "familyId": "CER-49",
+      "variantId": 1,
+      "level": 2,
+      "skill": "logika",
+      "active": true
+    },
+    {
+      "id": "CER-50",
+      "topicId": "statistika",
+      "difficulty": "Sedang",
+      "question": "Dalam kotak ada 4 bola merah, 5 bola biru, dan 1 bola hijau. Peluang terambil bola biru adalah ...",
+      "options": [
+        "1/2",
+        "1/5",
+        "1/4",
+        "1/10"
+      ],
+      "answer": 0,
+      "solution": "Total bola = 10, bola biru = 5.\nPeluang = 5/10 = 1/2.",
+      "familyId": "CER-50",
+      "variantId": 1,
+      "level": 2,
+      "skill": "logika",
+      "active": true
+    },
+    {
+      "id": "CER-51",
+      "topicId": "statistika",
+      "difficulty": "Sedang",
+      "question": "Rata-rata nilai 5 siswa 80. Jika nilai seorang siswa 88 ditambahkan, rata-rata menjadi ...",
+      "options": [
+        "81,3",
+        "80",
+        "82",
+        "83"
+      ],
+      "answer": 0,
+      "solution": "Jumlah 5 siswa = 400, tambah 88 = 488.\nRata-rata 6 siswa = 488 ÷ 6 = 81,33 ≈ 81,3.",
+      "familyId": "CER-51",
+      "variantId": 1,
+      "level": 2,
+      "skill": "logika",
+      "active": true
+    },
+    {
+      "id": "CER-52",
+      "topicId": "statistika",
+      "difficulty": "Tantangan",
+      "question": "Peluang muncul jumlah mata dadu 7 pada pelemparan dua dadu adalah ...",
+      "options": [
+        "1/6",
+        "1/12",
+        "1/36",
+        "1/18"
+      ],
+      "answer": 0,
+      "solution": "Pasangan berjumlah 7 ada 6 dari 36 kemungkinan.\nPeluang = 6/36 = 1/6.",
+      "familyId": "CER-52",
+      "variantId": 1,
+      "level": 3,
+      "skill": "logika",
+      "active": true
+    },
+    {
+      "id": "CER-53",
+      "topicId": "perbandingan",
+      "difficulty": "Mudah",
+      "question": "Perbandingan kelereng A dan B 2 : 3. Jika kelereng A ada 14, kelereng B ada ...",
+      "options": [
+        "21",
+        "18",
+        "24",
+        "15"
+      ],
+      "answer": 0,
+      "solution": "Kelereng B = (3/2) × 14 = 21.",
+      "familyId": "CER-53",
+      "variantId": 1,
+      "level": 1,
+      "skill": "logika",
+      "active": true
+    },
+    {
+      "id": "CER-54",
+      "topicId": "perbandingan",
+      "difficulty": "Sedang",
+      "question": "Empat pekerja menyelesaikan pekerjaan dalam 9 hari. Jika dikerjakan 6 pekerja, pekerjaan selesai dalam ...",
+      "options": [
+        "6 hari",
+        "5 hari",
+        "7 hari",
+        "8 hari"
+      ],
+      "answer": 0,
+      "solution": "Total = 4 × 9 = 36 orang-hari.\n6 pekerja → 36 ÷ 6 = 6 hari.",
+      "familyId": "CER-54",
+      "variantId": 1,
+      "level": 2,
+      "skill": "logika",
+      "active": true
+    },
+    {
+      "id": "CER-55",
+      "topicId": "perbandingan",
+      "difficulty": "Sedang",
+      "question": "Sebuah barang berharga Rp200.000 dan dijual rugi 15%. Harga jualnya adalah ...",
+      "options": [
+        "Rp170.000",
+        "Rp180.000",
+        "Rp185.000",
+        "Rp160.000"
+      ],
+      "answer": 0,
+      "solution": "Rugi = 15% × 200000 = 30000.\nHarga jual = 200000 − 30000 = 170000.",
+      "familyId": "CER-55",
+      "variantId": 1,
+      "level": 2,
+      "skill": "logika",
+      "active": true
+    },
+    {
+      "id": "CER-56",
+      "topicId": "perbandingan",
+      "difficulty": "Sedang",
+      "question": "Peta berskala 1 : 500.000. Jarak sebenarnya 25 km, maka jarak pada peta adalah ...",
+      "options": [
+        "5 cm",
+        "4 cm",
+        "2,5 cm",
+        "10 cm"
+      ],
+      "answer": 0,
+      "solution": "25 km = 2.500.000 cm.\nJarak peta = 2500000 ÷ 500000 = 5 cm.",
+      "familyId": "CER-56",
+      "variantId": 1,
+      "level": 2,
+      "skill": "logika",
+      "active": true
+    },
+    {
+      "id": "CER-57",
+      "topicId": "perbandingan",
+      "difficulty": "Sedang",
+      "question": "Uang Rina, Dina, dan Sinta berbanding 3 : 4 : 5. Jumlah uang mereka Rp360.000. Uang Dina adalah ...",
+      "options": [
+        "Rp120.000",
+        "Rp90.000",
+        "Rp150.000",
+        "Rp100.000"
+      ],
+      "answer": 0,
+      "solution": "Jumlah perbandingan = 12.\nUang Dina = (4/12) × 360000 = 120000.",
+      "familyId": "CER-57",
+      "variantId": 1,
+      "level": 2,
+      "skill": "logika",
+      "active": true
+    },
+    {
+      "id": "CER-58",
+      "topicId": "perbandingan",
+      "difficulty": "Tantangan",
+      "question": "Sebuah mobil butuh 6 liter bensin untuk 90 km. Bensin yang dibutuhkan untuk 150 km adalah ...",
+      "options": [
+        "10 liter",
+        "9 liter",
+        "11 liter",
+        "12 liter"
+      ],
+      "answer": 0,
+      "solution": "Perbandingan senilai: 6/90 = x/150.\nx = 6 × 150 ÷ 90 = 10 liter.",
+      "familyId": "CER-58",
+      "variantId": 1,
+      "level": 3,
+      "skill": "logika",
+      "active": true
+    },
+    {
+      "id": "CER-59",
+      "topicId": "bilangan",
+      "difficulty": "Sedang",
+      "question": "Dalam lomba lari, Raka selesai urutan ke-3 dari depan dan ke-6 dari belakang. Banyak peserta lomba adalah ...",
+      "options": [
+        "8 orang",
+        "9 orang",
+        "7 orang",
+        "10 orang"
+      ],
+      "answer": 0,
+      "solution": "Urutan ke-3 dari depan berarti 2 orang di depannya.\nKe-6 dari belakang berarti 5 orang di belakangnya.\nTotal = 2 + 1 + 5 = 8 orang.",
+      "familyId": "CER-59",
+      "variantId": 1,
+      "level": 2,
+      "skill": "logika",
+      "active": true
+    },
+    {
+      "id": "CER-60",
+      "topicId": "bilangan",
+      "difficulty": "Tantangan",
+      "question": "Sebuah bilangan dikali 4 lalu dikurangi 6 hasilnya 26. Bilangan itu adalah ...",
+      "options": [
+        "8",
+        "7",
+        "9",
+        "10"
+      ],
+      "answer": 0,
+      "solution": "4x − 6 = 26 → 4x = 32 → x = 8.",
+      "familyId": "CER-60",
+      "variantId": 1,
+      "level": 3,
+      "skill": "logika",
+      "active": true
+    },
+    {
+      "id": "CER-61",
+      "topicId": "aljabar",
+      "difficulty": "Sedang",
+      "question": "Harga 5 buku dan 2 pensil Rp23.000. Harga 3 buku dan 2 pensil Rp15.000. Harga sebuah buku adalah ...",
+      "options": [
+        "Rp4.000",
+        "Rp3.500",
+        "Rp4.500",
+        "Rp5.000"
+      ],
+      "answer": 0,
+      "solution": "Selisih 2 buku = 23000 − 15000 = 8000.\nHarga 1 buku = 8000 ÷ 2 = 4000.",
+      "familyId": "CER-61",
+      "variantId": 1,
+      "level": 2,
+      "skill": "logika",
+      "active": true
+    },
+    {
+      "id": "CER-62",
+      "topicId": "fungsi",
+      "difficulty": "Sedang",
+      "question": "Kurir mengantar 4 paket per jam. Banyak paket yang diantar dalam 7 jam adalah ...",
+      "options": [
+        "28 paket",
+        "24 paket",
+        "32 paket",
+        "21 paket"
+      ],
+      "answer": 0,
+      "solution": "4 × 7 = 28 paket.",
+      "familyId": "CER-62",
+      "variantId": 1,
+      "level": 2,
+      "skill": "logika",
+      "active": true
+    },
+    {
+      "id": "CER-63",
+      "topicId": "geometri",
+      "difficulty": "Sedang",
+      "question": "Sebuah segitiga memiliki alas 12 cm dan tinggi 8 cm. Luasnya adalah ...",
+      "options": [
+        "48 cm²",
+        "96 cm²",
+        "40 cm²",
+        "56 cm²"
+      ],
+      "answer": 0,
+      "solution": "Luas segitiga = 1/2 × alas × tinggi = 1/2 × 12 × 8 = 48 cm².",
+      "familyId": "CER-63",
+      "variantId": 1,
+      "level": 2,
+      "skill": "logika",
+      "active": true
+    },
+    {
+      "id": "CER-64",
+      "topicId": "statistika",
+      "difficulty": "Sedang",
+      "question": "Nilai 8 siswa: 70, 80, 90, 70, 80, 80, 90, 80. Modusnya adalah ...",
+      "options": [
+        "80",
+        "70",
+        "90",
+        "85"
+      ],
+      "answer": 0,
+      "solution": "Nilai 80 muncul 4 kali, paling sering.\nModus = 80.",
+      "familyId": "CER-64",
+      "variantId": 1,
+      "level": 2,
+      "skill": "logika",
+      "active": true
+    },
+    {
+      "id": "CER-65",
+      "topicId": "perbandingan",
+      "difficulty": "Sedang",
+      "question": "Perbandingan banyak siswa laki-laki dan perempuan 5 : 7. Jika jumlah siswa 48, banyak siswa perempuan adalah ...",
+      "options": [
+        "28 orang",
+        "20 orang",
+        "24 orang",
+        "30 orang"
+      ],
+      "answer": 0,
+      "solution": "Jumlah perbandingan = 12.\nPerempuan = (7/12) × 48 = 28 orang.",
+      "familyId": "CER-65",
+      "variantId": 1,
+      "level": 2,
+      "skill": "logika",
+      "active": true
+    },
+    {
+      "id": "CER-66",
+      "topicId": "perbandingan",
+      "difficulty": "Sedang",
+      "question": "Sebuah kendaraan menempuh 120 km dalam 2 jam. Waktu untuk menempuh 180 km dengan kecepatan sama adalah ...",
+      "options": [
+        "3 jam",
+        "2,5 jam",
+        "3,5 jam",
+        "4 jam"
+      ],
+      "answer": 0,
+      "solution": "Kecepatan = 120 ÷ 2 = 60 km/jam.\nWaktu = 180 ÷ 60 = 3 jam.",
+      "familyId": "CER-66",
+      "variantId": 1,
+      "level": 2,
+      "skill": "logika",
+      "active": true
+    }
+  ]
+};
+
+function getQuestionBank() {
+  return QUESTION_BANK;
+}
